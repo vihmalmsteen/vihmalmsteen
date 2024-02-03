@@ -1,6 +1,7 @@
 ######################################################## DDL & DML ########################################################
 -- seleciona tudo daqui pra baixo de da CTRL + ENTER
 
+drop database if exists exemplo_fin;
 create database if not exists exemplo_fin;
 use exemplo_fin;
 
@@ -41,675 +42,676 @@ create table if not exists cupons (
 );
 
 
-insert into vendas values
-(participanteId, 4558, 'PATRÍCIA  SANTOS GERVASIO', '2024-01-25', 'Maruba', 'sado room', 'day 2', 12, 3, 180, 0.1, 'pago', 'cartao', 4),
-(participanteId, 4558, 'GISELLE ALEVATO', '2024-01-25', 'Maruba', 'privê room', 'day 1', 11, 3, 100, 0.1, 'pago', 'cartao', 4),
-(participanteId, 4558, 'CARLOS EDUARDO SILVA GONÇALVES', '2024-01-25', 'Maruba', 'sado room', 'day 2', 12, 3, 180, 0.1, 'pago', 'cartao', 4),
-(participanteId, 4559, 'SILVESTRE CIRILO DOS SANTOS NETO', '2024-01-15', 'Maruba', 'outdoor', 'day 3', 13, 1, 90, 0.1, 'pago', 'cartao', 1),
-(participanteId, 4559, 'MARIA PAULA FRAZAO', '2024-01-15', 'Maruba', 'outdoor', 'day 2', 12, 1, 80, 0.1, 'pago', 'cartao', 1),
-(participanteId, 4562, 'KAROLINE GARRETT', '2024-02-02', 'Maruba', 'outdoor', 'day 2', 12, 3, 80, 0.1, 'pago', 'cartao', 5),
-(participanteId, 4565, 'STEFAN  GARRETT', '2024-01-25', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 2),
-(participanteId, 4567, 'ELENI BARBOSA SALES  VIANA', '2024-02-03', 'Maruba', 'sado room', 'day 1', 11, 4, 160, 0.1, 'pago', 'cartao', 4),
-(participanteId, 4576, 'LUCIANA  CAVALCANTI ', '2024-02-12', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'cartao', 2),
-(participanteId, 4579, 'CHARLOTTE JONQUA', '2024-01-20', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 4583, 'YURI DIONISIO', '2024-01-31', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'pix', 0),
-(participanteId, 4601, 'ALISSON SILVA BRITO  BRITO ', '2024-01-25', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'cartao', 1),
-(participanteId, 4642, 'CHARLES  SILVA ', '2024-01-30', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'pix', 0),
-(participanteId, 4780, 'ALISSON BRITO', '2024-02-08', 'Maruba', 'outdoor', 'day 3', 13, 4, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 4787, 'VANDER GOMES', '2024-02-08', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 4799, 'LEANDRO BURICHE PEREIRA ', '2024-01-28', 'Maruba', 'outdoor', 'day 3', 13, 2, 90, 0.1, 'pago', 'cartao', 1),
-(participanteId, 4812, 'JULIANA SYNDARA FONSECA COSTA ', '2024-02-05', 'Maruba', 'outdoor', 'day 1', 11, 3, 70, 0.1, 'pago', 'pix', 0),
-(participanteId, 4814, 'HELINTON LOUREIRO', '2024-02-03', 'Maruba', 'sado room', 'day 2', 12, 3, 180, 0.1, 'pago', 'cartao', 3),
-(participanteId, 4815, 'FABIO PERES', '2024-02-08', 'Maruba', 'sado room', 'day 1', 11, 3, 160, 0.1, 'pago', 'cartao', 5),
-(participanteId, 4820, 'GUSTAVO FONSECA DA CRUZ FONSECA DA CRUZ', '2024-02-11', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 4820, 'GISELE CRUZ', '2024-02-11', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'pix', 0),
-(participanteId, 4821, 'ANDERSON CORREIA SOARES', '2024-01-15', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'boleto', 0),
-(participanteId, 4830, 'EDSON SILVA', '2024-02-08', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 4843, 'TATIANA LA CROIX', '2024-02-08', 'Maruba', 'sado room', 'day 3', 13, 2, 200, 0.1, 'pago', 'cartao', 1),
-(participanteId, 4843, 'JÉSSICA MANHÃES GOMES ', '2024-02-08', 'Maruba', 'sado room', 'day 2', 12, 2, 180, 0.1, 'pago', 'cartao', 1),
-(participanteId, 4837, 'DAYANA COUTINHO', '2024-01-27', 'Maruba', 'outdoor', 'day 3', 13, 3, 90, 0.1, 'pago', 'cartao', 2),
-(participanteId, 4848, 'FABRICIA SUELEN  DOS SANTOS', '2024-02-03', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 4853, 'LINDOVAL ARAGÃO', '2024-01-16', 'Maruba', 'privê room', 'day 3', 13, 1, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 4841, 'ANNE CAROLINNE  STAEL PORTO ', '2024-01-26', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 4852, 'FERNANDA  LEME', '2024-01-23', 'Maruba', 'privê room', 'day 3', 13, 1, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 4851, 'GUTA VISCONTI', '2024-02-07', 'Maruba', 'sado room', 'day 3', 13, 2, 200, 0.1, 'pago', 'cartao', 2),
-(participanteId, 4866, 'ANICE PRISCILA  ALBINO VIEIRA ', '2024-02-07', 'Maruba', 'privê room', 'day 1', 11, 4, 100, 0.1, 'pago', 'boleto', 0),
-(participanteId, 4874, 'RAFAELA  GONZALVEZ', '2024-01-29', 'Maruba', 'sado room', 'day 1', 11, 1, 160, 0.1, 'pago', 'pix', 0),
-(participanteId, 4877, 'MARCIA RODRIGUES DA SILVA ', '2024-01-29', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'cartao', 3),
-(participanteId, 4878, 'PAULA  SEVERO', '2024-01-28', 'Maruba', 'sado room', 'day 2', 12, 1, 180, 0.1, 'pago', 'cartao', 5),
-(participanteId, 4885, 'BRUNO XAVIER DE LIMA', '2024-02-05', 'Maruba', 'outdoor', 'day 2', 12, 1, 80, 0.1, 'pago', 'pix', 0),
-(participanteId, 4883, 'LIDIANE  SANTOS', '2024-01-29', 'Maruba', 'outdoor', 'day 1', 11, 3, 70, 0.1, 'pago', 'cartao', 3),
-(participanteId, 4888, 'ISIS  ALVES GALVAO ', '2024-01-23', 'Maruba', 'privê room', 'day 3', 13, 2, 140, 0.1, 'pago', 'cartao', 2),
-(participanteId, 4891, 'ANA BEATRIZ COSTA', '2024-02-06', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 4892, 'ARTHUR RIBEIRO DA SILVA', '2024-02-08', 'Maruba', 'privê room', 'day 2', 12, 3, 120, 0.1, 'pago', 'cartao', 6),
-(participanteId, 4896, 'MARIA LÚCIA  CRUZ PROENÇA MARQUES ', '2024-01-22', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 6),
-(participanteId, 4897, 'WALESKA NOGUEIRA', '2024-01-15', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 5),
-(participanteId, 4901, 'MARCELA  NEVES', '2024-02-08', 'Maruba', 'privê room', 'day 2', 12, 4, 120, 0.1, 'pago', 'cartao', 5),
-(participanteId, 4912, 'BRUNO  RODRIGUES PESSANHA DA SILVA', '2024-01-16', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'cartao', 3),
-(participanteId, 4913, 'ANA BEATRIZ  MARONES DE GUSMÃO MACHADO COURI ', '2024-02-14', 'Maruba', 'privê room', 'day 3', 13, 4, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 4917, 'NAIRA SILVEIRA', '2024-02-09', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'pix', 0),
-(participanteId, 4920, 'MARIANNA ZATTAR', '2024-02-13', 'Maruba', 'outdoor', 'day 2', 12, 1, 80, 0.1, 'pago', 'cartao', 5),
-(participanteId, 4919, 'ANA CAROLINA  CARVALHO PETRONE', '2024-02-08', 'Maruba', 'sado room', 'day 2', 12, 2, 180, 0.1, 'pago', 'cartao', 3),
-(participanteId, 4925, 'GISELE SEVERO DE AZEVEDO CUNHA', '2024-02-13', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 2),
-(participanteId, 4926, 'LUCIANA ROCHA', '2024-02-09', 'Maruba', 'privê room', 'day 1', 11, 2, 100, 0.1, 'pago', 'cartao', 3),
-(participanteId, 4922, 'FÁBIO  TORRES DA SILVA', '2024-01-29', 'Maruba', 'privê room', 'day 1', 11, 1, 100, 0.1, 'pago', 'cartao', 4),
-(participanteId, 4922, 'ANDREA  ESNARRIAGA', '2024-01-29', 'Maruba', 'outdoor', 'day 2', 12, 1, 80, 0.1, 'pago', 'cartao', 4),
-(participanteId, 4928, 'ALVINA ESNARRIAGA', '2024-01-20', 'Maruba', 'outdoor', 'day 1', 11, 1, 70, 0.1, 'pago', 'pix', 0),
-(participanteId, 4946, 'ANNA ESTEVES', '2024-01-28', 'Maruba', 'outdoor', 'day 1', 11, 2, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 4950, 'CAMILA MOTTA ABREU ', '2024-02-01', 'Maruba', 'sado room', 'day 2', 12, 1, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 4954, 'JOYCE PAIXÃO DA COSTA BUARQUE', '2024-01-25', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 1),
-(participanteId, 4965, 'JAMES XAVIER', '2024-02-13', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'pix', 0),
-(participanteId, 4966, 'ANDRE DE MARTINI', '2024-01-26', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 4969, 'SIMONE VOLKMANN BECKER CAMPOS PENA', '2024-02-06', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'cartao', 6),
-(participanteId, 4971, 'FLAVIA DE PAIVA GUIMARÃES ', '2024-02-05', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 4974, 'LUIZ ALEXANDRE MOTTA', '2024-02-14', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'cartao', 6),
-(participanteId, 4979, 'BIANCA MARTINS', '2024-01-23', 'Maruba', 'privê room', 'day 2', 12, 2, 120, 0.1, 'pago', 'cartao', 4),
-(participanteId, 4980, 'FREDDY HENRIQUE LOPES DA SILVA', '2024-02-03', 'Maruba', 'privê room', 'day 3', 13, 1, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 4981, 'CAROLINE DOS SANTOS SILVA', '2024-01-15', 'Maruba', 'sado room', 'day 3', 13, 1, 200, 0.1, 'pago', 'boleto', 0),
-(participanteId, 4986, 'ERICA  BATISTA', '2024-02-14', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'boleto', 0),
-(participanteId, 4988, 'HENRIQUE ZAVAM ', '2024-01-20', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 4998, 'FERNANDA  LAVATORI LACERDA DE LIMA', '2024-02-11', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'pix', 0),
-(participanteId, 5008, 'PIERRE SILVA REIS', '2024-02-13', 'Maruba', 'outdoor', 'day 1', 11, 3, 70, 0.1, 'pago', 'pix', 0),
-(participanteId, 5012, 'ANA LUIZA CUNHA', '2024-01-28', 'Maruba', 'privê room', 'day 2', 12, 3, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 5013, 'CAROLINE SOARES', '2024-01-25', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5029, 'EDINALVA FELIX', '2024-02-10', 'Maruba', 'privê room', 'day 2', 12, 2, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5037, 'PAULO CASTILHO', '2024-02-14', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5039, 'PAULO  CASTILHO', '2024-01-18', 'Maruba', 'sado room', 'day 2', 12, 3, 180, 0.1, 'pago', 'cartao', 4),
-(participanteId, 5041, 'LUCAS  ALCIDES', '2024-02-04', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 5045, 'LUCAS ALCIDES', '2024-01-31', 'Maruba', 'privê room', 'day 2', 12, 4, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 5047, 'CRISTIANE  VIEIRA', '2024-02-03', 'Maruba', 'outdoor', 'day 1', 11, 1, 70, 0.1, 'pago', 'pix', 0),
-(participanteId, 5048, 'THAISE  OLIVEIRA ', '2024-01-31', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 5054, 'MARCELA CAMPOS', '2024-01-21', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 4),
-(participanteId, 5063, 'LAIZ MONTEIRO DIAS DE FARIA', '2024-01-30', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 5068, 'DIOGO LUIZ CORREIA DE FARIA', '2024-02-10', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5067, 'RENATA  FREITAS CESÁRIO MARTINS', '2024-01-16', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 5069, 'AGUSTÍN MONTEIRO', '2024-01-19', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5074, 'EMILIO MONTEIRO', '2024-01-29', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5075, 'FERNANDA MONTEIRO', '2024-01-29', 'Maruba', 'privê room', 'day 3', 13, 1, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5078, 'BIANCA  GUIMARÃES ', '2024-01-29', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 4),
-(participanteId, 5079, 'DANIELA CRISTINA  ALVES TOSO ', '2024-02-11', 'Maruba', 'privê room', 'day 1', 11, 2, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 5083, 'TAMIRES SANTIAGO ', '2024-02-13', 'Maruba', 'sado room', 'day 1', 11, 1, 160, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5088, 'ELIZABETH  DIAMANTINO', '2024-01-15', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5088, 'CECILIA KAZNIAKOWSKI', '2024-01-15', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5094, 'RAFAEL  MEDEIROS', '2024-02-12', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5095, 'POLYANA ALONSO ', '2024-02-05', 'Maruba', 'sado room', 'day 2', 12, 3, 180, 0.1, 'pago', 'cartao', 4),
-(participanteId, 5097, 'BRUNO BUSSADE', '2024-01-20', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5102, 'GABRIELA BARROS', '2024-01-23', 'Maruba', 'privê room', 'day 2', 12, 4, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 5103, 'ESTHER CASAMASSO', '2024-02-02', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'pix', 0),
-(participanteId, 5104, 'ISABELLA  DE SOUZA E SILVA REIS ', '2024-02-07', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 2),
-(participanteId, 5108, 'REJANE  LIMA DOS SANTOS ', '2024-01-15', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5112, 'PRISCILA  GIMENE', '2024-02-12', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5112, 'PRISCILLA  LUZ', '2024-02-12', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5123, 'FATIMA CRISTINA  ARAUJO SEQUEIROS BUENO', '2024-01-22', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 5124, 'ANDERSON MENEZES BUENO', '2024-01-17', 'Maruba', 'privê room', 'day 2', 12, 2, 120, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5133, 'ANDRÉ  RODRIGUES', '2024-02-07', 'Maruba', 'privê room', 'day 3', 13, 2, 140, 0.1, 'pago', 'cartao', 4),
-(participanteId, 5150, 'LUIZ CARLOS SOUZA DE  SANTANA', '2024-02-04', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5185, 'TIAGO BELCAVELLO  GUEDES ', '2024-02-03', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5188, 'BRUNO ALLEVATO', '2024-01-21', 'Maruba', 'outdoor', 'day 1', 11, 2, 70, 0.1, 'pago', 'cartao', 4),
-(participanteId, 5192, 'EDCARLOS  SANTOS ', '2024-02-07', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5197, 'VIVIAN CRISTINA  PEREIRA ', '2024-01-24', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 5198, 'RACHEL WERNECK', '2024-02-12', 'Maruba', 'privê room', 'day 3', 13, 1, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5200, 'ANA OLIVEIRA', '2024-01-19', 'Maruba', 'privê room', 'day 2', 12, 3, 120, 0.1, 'pago', 'cartao', 2),
-(participanteId, 5201, 'ANDERSON RELVA DE FARIAS', '2024-01-19', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 5207, 'CÉSAR  MENDES ', '2024-02-01', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5207, 'ANE RANIE LINHARES DE BRITO', '2024-02-01', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5207, 'RAQUEL  BAZILIO DUBOSCQ', '2024-02-01', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5210, 'CARLOS  ANDRÉ OLIVEIRA', '2024-01-28', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 5214, 'FABIANA  MOURA MATOS', '2024-01-24', 'Maruba', 'privê room', 'day 2', 12, 2, 120, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5213, 'MARCOS ABREU', '2024-01-24', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'pix', 0),
-(participanteId, 5216, 'PATRÍCIA MARIA  PORTELLA', '2024-01-29', 'Maruba', 'sado room', 'day 3', 13, 2, 200, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5221, 'PAULA MOREIRA', '2024-01-27', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5228, 'TATIANE RIBEIRO DUARTE', '2024-02-09', 'Maruba', 'sado room', 'day 2', 12, 2, 180, 0.1, 'pago', 'cartao', 1),
-(participanteId, 5232, 'STELA  TEIXEIRA', '2024-01-17', 'Maruba', 'outdoor', 'day 3', 13, 4, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5233, 'SIMONE  DA SILVA NOBREGA ', '2024-02-01', 'Maruba', 'sado room', 'day 1', 11, 2, 160, 0.1, 'pago', 'cartao', 1),
-(participanteId, 5233, 'RAQUEL  SCHUINDT ', '2024-02-01', 'Maruba', 'outdoor', 'day 1', 11, 2, 70, 0.1, 'pago', 'cartao', 1),
-(participanteId, 5236, 'MICHAEL  FERNANDES ', '2024-01-28', 'Maruba', 'privê room', 'day 3', 13, 3, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5247, 'SAMANTHA FILIZZOLA', '2024-01-27', 'Maruba', 'sado room', 'day 2', 12, 2, 180, 0.1, 'pago', 'cartao', 4),
-(participanteId, 5250, 'PATRÍCIA  SALGADO ', '2024-01-24', 'Maruba', 'sado room', 'day 2', 12, 2, 180, 0.1, 'pago', 'cartao', 6),
-(participanteId, 5251, 'LEANDRO  ALVES NASCIMENTO ', '2024-02-05', 'Maruba', 'sado room', 'day 2', 12, 1, 180, 0.1, 'pago', 'cartao', 6),
-(participanteId, 5254, 'VÍTOR  MOREIRA AGUIAR GOMES ', '2024-02-01', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5254, 'SABRINA  DIAS DE LIMA AGUIAR ', '2024-02-01', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5259, 'RENATO VALLE', '2024-02-04', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5272, 'NATALIA FATIGATTE', '2024-01-29', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5273, 'FELIPE  FARIAS', '2024-02-05', 'Maruba', 'sado room', 'day 1', 11, 1, 160, 0.1, 'pago', 'cartao', 2),
-(participanteId, 5274, 'NATHALIA  LIMA ROSARIO DOS SANTOS', '2024-01-25', 'Maruba', 'privê room', 'day 2', 12, 1, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5276, 'RICARDO DE MELO PEREIRA', '2024-01-16', 'Maruba', 'privê room', 'day 3', 13, 3, 140, 0.1, 'pago', 'cartao', 1),
-(participanteId, 5278, 'MICHELLE LOURENCO CORDA ILIOVITZ', '2024-02-02', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'pix', 0),
-(participanteId, 5286, 'MARCELO DE AQUINO MENDONÇA', '2024-02-02', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5287, 'LUCIANA CAMARA', '2024-02-01', 'Maruba', 'privê room', 'day 3', 13, 3, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5293, 'ROBSON BRANDÃO', '2024-01-17', 'Maruba', 'outdoor', 'day 3', 13, 3, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5294, 'FELIPE DE MELO FONTE', '2024-01-20', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5295, 'RAFFAELA  LIMA', '2024-01-26', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5297, 'MARCELLO JORGE', '2024-01-28', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5311, 'GABRIELLA GUGLIELMELLI', '2024-01-18', 'Maruba', 'outdoor', 'day 1', 11, 1, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5313, 'LUIS ROBERTO MANNARINO', '2024-01-30', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 5317, 'CAMILA  BASTOS FIGUEIREDO ANTUNES ', '2024-02-06', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'cartao', 4),
-(participanteId, 5318, 'FELIPE BARRADAS ANTUNES ', '2024-01-24', 'Maruba', 'outdoor', 'day 3', 13, 3, 90, 0.1, 'pago', 'pix', 0),
-(participanteId, 5321, 'GIOVANNA SALES', '2024-02-05', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5323, 'ANDERSON MORAES PEREIRA', '2024-01-31', 'Maruba', 'outdoor', 'day 2', 12, 4, 80, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5326, 'LIDIA  LARANGEIRA', '2024-02-01', 'Maruba', 'outdoor', 'day 3', 13, 2, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5328, 'NATÁLIA  FATIGATTE', '2024-02-05', 'Maruba', 'outdoor', 'day 1', 11, 2, 70, 0.1, 'pago', 'pix', 0),
-(participanteId, 5329, 'THIAGO FERRAO', '2024-01-29', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5330, 'DOMINIQUE  SAURET', '2024-01-23', 'Maruba', 'sado room', 'day 1', 11, 3, 160, 0.1, 'pago', 'cartao', 2),
-(participanteId, 5332, 'SALUSTIANA  OLIVEIRA DE SOUZA ', '2024-01-21', 'Maruba', 'sado room', 'day 1', 11, 4, 160, 0.1, 'pago', 'pix', 0),
-(participanteId, 5339, 'MARCIO  PEREIRA COSTA ', '2024-01-19', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'cartao', 4),
-(participanteId, 5347, 'TADEU ÁVILA', '2024-01-17', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5348, 'PAULA PESTANA MELLO', '2024-02-01', 'Maruba', 'privê room', 'day 2', 12, 2, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5355, 'OLIVIA RIBEIRO MALTA', '2024-02-05', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5359, 'GUILHERME VENANCIO', '2024-02-06', 'Maruba', 'outdoor', 'day 1', 11, 3, 70, 0.1, 'pago', 'cartao', 6),
-(participanteId, 5360, 'ARIANE RAPOSO NOGUEIRA  SOARES', '2024-02-07', 'Maruba', 'privê room', 'day 3', 13, 3, 140, 0.1, 'pago', 'cartao', 1),
-(participanteId, 5361, 'JULIANA MONTEIRO', '2024-02-13', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5363, 'SOFIA MONTEIRO', '2024-02-05', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 5364, 'LARISSA  GOERING ', '2024-02-04', 'Maruba', 'privê room', 'day 2', 12, 2, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5374, 'RAFAEL GOERING ', '2024-01-19', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5376, 'CAMILA  DINIZ ', '2024-02-14', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5378, 'GUSTAVO PENNA', '2024-02-02', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5378, 'QUÉZIA ABREU', '2024-02-02', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5381, 'ANA PAULA MARTINS DE SOUZA E DIAS', '2024-02-05', 'Maruba', 'sado room', 'day 1', 11, 1, 160, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5383, 'FLÁVIA  SAMPAIO MUSSE ', '2024-02-07', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 4),
-(participanteId, 5388, 'TATIANA GUIMARÃES', '2024-01-19', 'Maruba', 'outdoor', 'day 1', 11, 3, 70, 0.1, 'pago', 'pix', 0),
-(participanteId, 5393, 'LIVIA MARINHO', '2024-02-02', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5395, 'LIVIA  CARVALHO COSTA', '2024-01-31', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 2),
-(participanteId, 5396, 'ROBERTA  CLAUDINO', '2024-01-16', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5406, 'BIANCA DAMAREN ', '2024-02-04', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'cartao', 6),
-(participanteId, 5427, 'NILZIA VIEIRA', '2024-02-12', 'Maruba', 'sado room', 'day 1', 11, 1, 160, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5434, 'LUCA GOMES', '2024-01-28', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 5436, 'LEONARDO  BITTENCOURT ', '2024-02-04', 'Maruba', 'sado room', 'day 1', 11, 3, 160, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5435, 'LEONEL THEMOTEO', '2024-02-02', 'Maruba', 'outdoor', 'day 3', 13, 3, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5437, 'ANA BRAGA', '2024-01-29', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5437, 'PRISCYLLA CASTELAR', '2024-01-29', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5442, 'ALISSON SILVA  BRITO ', '2024-01-26', 'Maruba', 'privê room', 'day 3', 13, 3, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5442, 'CATIA GRANGEIRO DA SILVA', '2024-01-26', 'Maruba', 'privê room', 'day 2', 12, 3, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5463, 'WANDERLEY CARREIRA', '2024-01-15', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 5466, 'RAFAEL GUIMARÃES', '2024-02-03', 'Maruba', 'sado room', 'day 2', 12, 4, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5474, 'LEONARDO SALGADO DE BRITO BATISTA', '2024-01-21', 'Maruba', 'sado room', 'day 3', 13, 3, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 5477, 'FABIANE  RODRIGUES DE LIMA', '2024-01-31', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5484, 'GISELI  TORRES', '2024-01-18', 'Maruba', 'privê room', 'day 1', 11, 1, 100, 0.1, 'pago', 'cartao', 6),
-(participanteId, 5492, 'STEFANNY  LOURENÇO SOARES', '2024-02-04', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'cartao', 6),
-(participanteId, 5493, 'ANA BERMUDES', '2024-01-15', 'Maruba', 'outdoor', 'day 2', 12, 1, 80, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5494, 'SYLVIA DE LACERDA MONTEIRO', '2024-01-29', 'Maruba', 'outdoor', 'day 2', 12, 3, 80, 0.1, 'pago', 'pix', 0),
-(participanteId, 5500, 'ALEXANDRE WINKELMANN', '2024-02-09', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'cartao', 6),
-(participanteId, 5501, 'CAROLINNE  BENTO DUARTE', '2024-01-29', 'Maruba', 'outdoor', 'day 1', 11, 1, 70, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5503, 'ROBERTA ESTRELLA', '2024-02-10', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 1),
-(participanteId, 5504, 'EVERTON DIAS DOS SANTOS', '2024-02-10', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 5509, 'JOSEANY ALVES DA SILVA SOUZA', '2024-02-10', 'Maruba', 'sado room', 'day 2', 12, 2, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5512, 'LUZINEI DE ARAUJO', '2024-01-28', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 5515, 'CAROLINA PAULA CAMPOS SILVEIRA ', '2024-02-11', 'Maruba', 'outdoor', 'day 2', 12, 2, 80, 0.1, 'pago', 'pix', 0),
-(participanteId, 5522, 'ESTHER SILVEIRA', '2024-02-01', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 6),
-(participanteId, 5537, 'CAROLINA  PINHEIRO', '2024-01-15', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5542, 'LORENA MOREIRA', '2024-02-12', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'cartao', 4),
-(participanteId, 5543, 'ISABELLA BARBIERI', '2024-01-22', 'Maruba', 'sado room', 'day 3', 13, 1, 200, 0.1, 'pago', 'cartao', 6),
-(participanteId, 5544, 'ANA CAROLINA  EGYPTO', '2024-02-05', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 4),
-(participanteId, 5545, 'GUSTAVO GOUVEA TOMMASI DE CARVALHO', '2024-02-14', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5551, 'BRUNO MARTINS DA SILVA', '2024-02-02', 'Maruba', 'privê room', 'day 2', 12, 3, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5553, 'ADRIANA  COUTO', '2024-01-25', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5559, 'CELIA CRISTINA PINTO DE OLIVEIRA', '2024-01-18', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'cartao', 4),
-(participanteId, 5562, 'LARISSA  HELENA MATHIAS DE LIMA E SOUZA BRANDÃO', '2024-01-16', 'Maruba', 'sado room', 'day 2', 12, 2, 180, 0.1, 'pago', 'cartao', 2),
-(participanteId, 5563, 'HUA LIN CHANG', '2024-02-01', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'cartao', 6),
-(participanteId, 5567, 'TALITA  FERREIRA ', '2024-01-23', 'Maruba', 'sado room', 'day 3', 13, 1, 200, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5587, 'SERGIO LUIZ N AZEVEDO', '2024-01-27', 'Maruba', 'privê room', 'day 3', 13, 1, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 5593, 'PATRICIA  MENDES', '2024-01-15', 'Maruba', 'sado room', 'day 2', 12, 3, 180, 0.1, 'pago', 'cartao', 2),
-(participanteId, 5606, 'CAMILA REZENDE ', '2024-02-02', 'Maruba', 'privê room', 'day 3', 13, 1, 140, 0.1, 'pago', 'cartao', 6),
-(participanteId, 5609, 'ANDERSON  LEANDRO BONFIM', '2024-02-07', 'Maruba', 'privê room', 'day 3', 13, 4, 140, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5610, 'ANA CAROLINA   GOMES SOBRAL', '2024-01-31', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5613, 'SIMONE  RODRIGUES SILVA', '2024-02-11', 'Maruba', 'outdoor', 'day 3', 13, 2, 90, 0.1, 'pago', 'pix', 0),
-(participanteId, 5613, 'FÁTIMA DIAS ALEXANDRINO', '2024-02-11', 'Maruba', 'sado room', 'day 3', 13, 2, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 5620, 'RODRIGO LANES DA SILVA', '2024-02-13', 'Maruba', 'privê room', 'day 2', 12, 4, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5620, 'JULIANA FERNANDES DE SENNA NUNES', '2024-02-13', 'Maruba', 'privê room', 'day 1', 11, 4, 100, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5621, 'RODOLFO BASTOS GOMES DA SILVA', '2024-02-13', 'Maruba', 'outdoor', 'day 1', 11, 1, 70, 0.1, 'pago', 'pix', 0),
-(participanteId, 5625, 'CÍCERO RODRIGUES', '2024-02-13', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5626, 'KEILA  ARAUJO DO AMARAL SANTOS ', '2024-01-22', 'Maruba', 'sado room', 'day 3', 13, 2, 200, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5629, 'EDUARDO FONSECA', '2024-02-06', 'Maruba', 'privê room', 'day 2', 12, 2, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 5630, 'CARLOS  OLIVEIRA', '2024-01-26', 'Maruba', 'outdoor', 'day 3', 13, 3, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5636, 'ARLINDO SEBASTIÃO DE MELO', '2024-01-20', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5639, 'PAULO HENRIQUES ', '2024-02-02', 'Maruba', 'sado room', 'day 2', 12, 4, 180, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5640, 'EDIMAR PERICO ', '2024-01-31', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5642, 'ANDRINA ROCHA ALVES', '2024-02-04', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5643, 'FREDERICO OZANAN  M RAMOS FILHO', '2024-01-22', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5644, 'PEDRO DANTAS', '2024-01-27', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5654, 'ROBERTA ELIAS', '2024-01-21', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5655, 'MARINA FERRER', '2024-01-29', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5667, 'ANNA ESTER PEREIRA SILVA', '2024-02-07', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 5671, 'ANTONIO CAVALHEIRO AC', '2024-01-30', 'Maruba', 'outdoor', 'day 3', 13, 1, 90, 0.1, 'pago', 'pix', 0),
-(participanteId, 5693, 'JOSIANE D G O SOUZA', '2024-01-16', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 2),
-(participanteId, 5696, 'MARCELO BATISTA BRAGA', '2024-02-10', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'cartao', 2),
-(participanteId, 5702, 'AMANDA DI MISCIO', '2024-01-31', 'Maruba', 'privê room', 'day 1', 11, 4, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 5708, 'ROBSON DA SILVA ROMA', '2024-02-02', 'Maruba', 'sado room', 'day 3', 13, 1, 200, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5712, 'MOZART NETO', '2024-02-06', 'Maruba', 'privê room', 'day 2', 12, 3, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5718, 'NOAH  MENEZES', '2024-02-10', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5721, 'MAYARA LAURENTINO ALVES CALDAS DE SOUZA', '2024-02-11', 'Maruba', 'sado room', 'day 1', 11, 3, 160, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5739, 'MARIA DE FÁTIMA CARLIM CARLIM', '2024-01-17', 'Maruba', 'privê room', 'day 1', 11, 2, 100, 0.1, 'pago', 'cartao', 1),
-(participanteId, 5746, 'TATIANE  SENA', '2024-02-06', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5753, 'MARITZA ANZANELLO', '2024-01-21', 'Maruba', 'outdoor', 'day 3', 13, 3, 90, 0.1, 'pago', 'pix', 0),
-(participanteId, 5759, 'RAFAELA ARLOTTA', '2024-02-01', 'Maruba', 'privê room', 'day 3', 13, 3, 140, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5760, 'ALINE COUTINHO', '2024-01-19', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 5767, 'THIAGO SOARES NASCIMWNTO', '2024-01-28', 'Maruba', 'sado room', 'day 2', 12, 1, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 5780, 'GUSTAVO  SILVA SANTOS', '2024-01-30', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5788, 'ROBERTA  LIMA', '2024-01-30', 'Maruba', 'privê room', 'day 2', 12, 2, 120, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5806, 'FERNANDO LUCAS', '2024-01-16', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5806, 'HORACIO  SILVA DO COUTO ', '2024-01-16', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5811, 'GUSTAVO PACHECO DE SOUZA CRUZ', '2024-01-30', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'cartao', 6),
-(participanteId, 5813, 'LUCIANA ALVES SILVA', '2024-02-14', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5814, 'LEANDRO DE OLIVEIRA  BARROS', '2024-02-03', 'Maruba', 'outdoor', 'day 1', 11, 3, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5819, 'RENATA OLIVEIRA DE ALBUQUERQUE LIMA', '2024-01-26', 'Maruba', 'outdoor', 'day 1', 11, 2, 70, 0.1, 'pago', 'pix', 0),
-(participanteId, 5818, 'JOSÉ ALBERTO  BARONI', '2024-02-09', 'Maruba', 'privê room', 'day 1', 11, 1, 100, 0.1, 'pago', 'cartao', 3),
-(participanteId, 5825, 'JUCELENE RAMOS DA SILVA', '2024-02-07', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5827, 'ELLEN GONZAGA DE OLIVEIRA CASTRO', '2024-02-03', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5832, 'SHEILA APARECIDA  SOARES DE MELO ', '2024-02-10', 'Maruba', 'privê room', 'day 3', 13, 4, 140, 0.1, 'pago', 'cartao', 1),
-(participanteId, 5834, 'ELISA  DE SOUSA GOULART ', '2024-01-24', 'Maruba', 'outdoor', 'day 1', 11, 4, 70, 0.1, 'pago', 'cartao', 4),
-(participanteId, 5836, 'CAMILA CURVELO', '2024-01-27', 'Maruba', 'sado room', 'day 1', 11, 1, 160, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5839, 'BRUNA TAVARES VIEIRA DA SILVA ', '2024-01-23', 'Maruba', 'sado room', 'day 3', 13, 4, 200, 0.1, 'pago', 'cartao', 4),
-(participanteId, 5841, 'MADALENA  MINUSSI', '2024-02-11', 'Maruba', 'outdoor', 'day 1', 11, 1, 70, 0.1, 'pago', 'cartao', 6),
-(participanteId, 5847, 'FABIULA SCHWARTZ DE AZEVEDO', '2024-01-18', 'Maruba', 'outdoor', 'day 3', 13, 1, 90, 0.1, 'pago', 'cartao', 1),
-(participanteId, 5849, 'CAROLINE KNOPLOCH', '2024-01-28', 'Maruba', 'privê room', 'day 1', 11, 3, 100, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5852, 'LUCIANA MONTEIRO', '2024-01-31', 'Maruba', 'sado room', 'day 2', 12, 4, 180, 0.1, 'pago', 'cartao', 2),
-(participanteId, 5859, 'LUCAS  PEREIRA ', '2024-01-31', 'Maruba', 'privê room', 'day 2', 12, 2, 120, 0.1, 'pago', 'cartao', 4),
-(participanteId, 5861, 'MARIA EDUARDA  BRAGA LEÃO', '2024-02-12', 'Maruba', 'outdoor', 'day 3', 13, 1, 90, 0.1, 'pago', 'pix', 0),
-(participanteId, 5861, 'CARLA FONTES', '2024-02-12', 'Maruba', 'privê room', 'day 2', 12, 1, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 5862, 'PATRICIA LUSIE VELOZO DA COSTA', '2024-01-16', 'Maruba', 'outdoor', 'day 2', 12, 3, 80, 0.1, 'pago', 'pix', 0),
-(participanteId, 5863, 'MAIRA LUCAS', '2024-01-16', 'Maruba', 'sado room', 'day 3', 13, 4, 200, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5867, 'VICTÓRIA LOPES DE CARVALHO', '2024-01-22', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 5871, 'ISABELLA AUGUSTA  MOREIRA DE OLIVEIRA ', '2024-02-14', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 5873, 'DAFNE BASTOS', '2024-01-20', 'Maruba', 'privê room', 'day 2', 12, 3, 120, 0.1, 'pago', 'cartao', 2),
-(participanteId, 5875, 'EVANILDO  ROCHA ', '2024-02-11', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 6),
-(participanteId, 5876, 'EVANILDO ROCHA', '2024-02-03', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5877, 'NICOLE INGOUVILLE DE SOUZA', '2024-01-25', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5877, 'PAULA SAMICO', '2024-01-25', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5879, 'VICTOR   ALTOMAR PEREIRA ', '2024-01-16', 'Maruba', 'sado room', 'day 3', 13, 2, 200, 0.1, 'pago', 'cartao', 1),
-(participanteId, 5885, 'PAULA SALDANHA', '2024-02-06', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'pix', 0),
-(participanteId, 5890, 'MARIA ELIZABETH AZEVEDO', '2024-02-09', 'Maruba', 'outdoor', 'day 3', 13, 2, 90, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5901, 'RODRIGO  MOLINARES DOS SANTOS ', '2024-01-24', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'cartao', 1),
-(participanteId, 5905, 'SERGIO CARNEIRO DE CASTRO FILHO', '2024-02-13', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5912, 'EDIMAR  PERICO', '2024-02-01', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 6),
-(participanteId, 5916, 'HELIO ONO', '2024-01-18', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5931, 'LILIAN S. FERREIRA', '2024-01-15', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5933, 'MÍRCIA ESTELA TAXA', '2024-02-13', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 5937, 'FLÁVIA  DUTRA VENANCIO ', '2024-02-05', 'Maruba', 'sado room', 'day 1', 11, 1, 160, 0.1, 'pago', 'cartao', 5),
-(participanteId, 5943, 'BELLA MOLL', '2024-01-19', 'Maruba', 'outdoor', 'day 3', 13, 1, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5945, 'CRISTIANO ALVES', '2024-01-20', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 1),
-(participanteId, 5952, 'ERIKA  CAVAZOS', '2024-02-07', 'Maruba', 'privê room', 'day 1', 11, 1, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 5956, 'CAILA RODRIGUES', '2024-01-18', 'Maruba', 'sado room', 'day 1', 11, 1, 160, 0.1, 'pago', 'pix', 0),
-(participanteId, 5983, 'MARCELLO SAMPAIO', '2024-01-24', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'cartao', 1),
-(participanteId, 5990, 'APARECIDA RODRIGUES ', '2024-02-09', 'Maruba', 'outdoor', 'day 3', 13, 1, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5992, 'MARIANA FREIRE', '2024-01-25', 'Maruba', 'privê room', 'day 3', 13, 4, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 5995, 'RUAN FELLIPE', '2024-01-30', 'Maruba', 'sado room', 'day 1', 11, 2, 160, 0.1, 'pago', 'cartao', 4),
-(participanteId, 5995, 'ROBERTO GOIS', '2024-01-30', 'Maruba', 'outdoor', 'day 3', 13, 2, 90, 0.1, 'pago', 'cartao', 4),
-(participanteId, 5996, 'CHRISTIANE HELLMUTH', '2024-02-06', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'cartao', 3),
-(participanteId, 6015, 'DANIEL DE SOUZA BARROSO', '2024-01-23', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 6025, 'LEONORA DE SOUZA BARROSO', '2024-01-17', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'pix', 0),
-(participanteId, 6026, 'MAURILLO MONNERAT', '2024-01-25', 'Maruba', 'privê room', 'day 3', 13, 2, 140, 0.1, 'pago', 'cartao', 1),
-(participanteId, 6029, 'ROGERIO OLIVEIRA', '2024-01-29', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'cartao', 6),
-(participanteId, 6031, 'ANA CAROLINA  BASTOS MAYNART DE MELO', '2024-01-31', 'Maruba', 'privê room', 'day 2', 12, 2, 120, 0.1, 'pago', 'cartao', 3),
-(participanteId, 6054, 'LUCIANA  BATISTA ROSA ', '2024-02-11', 'Maruba', 'sado room', 'day 3', 13, 3, 200, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6058, 'REBECCA BARROS', '2024-01-22', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6060, 'DANYELLE  VENTURA ', '2024-01-15', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6072, 'ALEX SALTZ', '2024-02-01', 'Maruba', 'sado room', 'day 1', 11, 3, 160, 0.1, 'pago', 'pix', 0),
-(participanteId, 6081, 'ÍSIS  POMPILI ', '2024-02-11', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6084, 'THIAGO CESAR', '2024-01-18', 'Maruba', 'privê room', 'day 1', 11, 1, 100, 0.1, 'pago', 'cartao', 3),
-(participanteId, 6096, 'JULIA  MARIA  PILLA ZUR NEDDEN', '2024-02-14', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 6117, 'RENATO COHEN', '2024-02-09', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6118, 'ALCIDES FRANCISCO DA SILVA NETO', '2024-01-31', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 1),
-(participanteId, 6124, 'FELIPE LEITE', '2024-01-31', 'Maruba', 'outdoor', 'day 3', 13, 4, 90, 0.1, 'pago', 'cartao', 4),
-(participanteId, 6142, 'ALISSON CHEN', '2024-02-05', 'Maruba', 'outdoor', 'day 3', 13, 2, 90, 0.1, 'pago', 'cartao', 4),
-(participanteId, 6142, 'ERICA SANTANA', '2024-02-05', 'Maruba', 'sado room', 'day 2', 12, 2, 180, 0.1, 'pago', 'cartao', 4),
-(participanteId, 6149, 'JOYCE  SILVA', '2024-02-06', 'Maruba', 'outdoor', 'day 2', 12, 2, 80, 0.1, 'pago', 'cartao', 1),
-(participanteId, 6161, 'NATASHA ANASTACIA FERREIRA PINTO', '2024-01-24', 'Maruba', 'privê room', 'day 2', 12, 3, 120, 0.1, 'pago', 'cartao', 4),
-(participanteId, 6165, 'CAROLINE MACIEL', '2024-02-14', 'Maruba', 'outdoor', 'day 2', 12, 4, 80, 0.1, 'pago', 'cartao', 3),
-(participanteId, 6187, 'MARIA FERNANDA  ERASMI', '2024-01-18', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6202, 'PEDRO HENRIQUE  CASTRO', '2024-02-09', 'Maruba', 'sado room', 'day 2', 12, 4, 180, 0.1, 'pago', 'cartao', 3),
-(participanteId, 6209, 'FERNANDA MUNIZ MAINENTE', '2024-01-31', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6218, 'RENATA MULLER', '2024-01-24', 'Maruba', 'outdoor', 'day 2', 12, 1, 80, 0.1, 'pago', 'cartao', 1),
-(participanteId, 6221, 'EDUARDO MAGALHÃES', '2024-01-30', 'Maruba', 'outdoor', 'day 3', 13, 2, 90, 0.1, 'pago', 'cartao', 6),
-(participanteId, 6221, 'MARCELA REIS ', '2024-01-30', 'Maruba', 'outdoor', 'day 2', 12, 2, 80, 0.1, 'pago', 'cartao', 6),
-(participanteId, 6234, 'MARIA LUIZA  GOMES DOS SANTOS', '2024-01-19', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'cartao', 4),
-(participanteId, 6249, 'PAULO SANTOS', '2024-01-24', 'Maruba', 'sado room', 'day 1', 11, 3, 160, 0.1, 'pago', 'pix', 0),
-(participanteId, 6260, 'MARCELA MALIZIA', '2024-02-06', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'pix', 0),
-(participanteId, 6265, 'JONATHAN  FERNANDES DA SILVA', '2024-02-02', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6276, 'DANIELA SILVA', '2024-02-03', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'cartao', 2),
-(participanteId, 6283, 'RAQUEL  CARIELLO', '2024-01-25', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 6283, 'THIAGO S BRACONI', '2024-01-25', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 6283, 'VALERIA SILVA ', '2024-01-25', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 6283, 'DANIELLE  PINNA', '2024-01-25', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 6283, 'ANA PADILHA', '2024-01-25', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 6286, 'MAYRA RIZZI', '2024-02-09', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6296, 'ERNST KOETSIER', '2024-02-14', 'Maruba', 'privê room', 'day 2', 12, 4, 120, 0.1, 'pago', 'cartao', 5),
-(participanteId, 6306, 'MADALENA MINUSSI', '2024-02-11', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6309, 'ANDRÉA ROSA', '2024-02-05', 'Maruba', 'sado room', 'day 3', 13, 1, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 6311, 'CAROL LANNE DA SILVA CAMPOS DE MOURA DINIZ GONÇALVES ', '2024-02-10', 'Maruba', 'outdoor', 'day 3', 13, 1, 90, 0.1, 'pago', 'pix', 0),
-(participanteId, 6311, 'SIMONE FERREIRA', '2024-02-10', 'Maruba', 'sado room', 'day 1', 11, 1, 160, 0.1, 'pago', 'pix', 0),
-(participanteId, 6425, 'RENATO DIAS', '2024-02-03', 'Maruba', 'sado room', 'day 2', 12, 2, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6470, 'PATRÍCIA  NASCIMENTO DA CRUZ BOSSOLO GARCIA ', '2024-02-11', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 4),
-(participanteId, 6514, 'CAMILA RODRIGUES ', '2024-02-06', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6521, 'BRENNO  OLIVEIRA', '2024-01-28', 'Maruba', 'sado room', 'day 1', 11, 2, 160, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6540, 'MARIELZA  MARINHO ', '2024-02-10', 'Maruba', 'sado room', 'day 3', 13, 1, 200, 0.1, 'pago', 'cartao', 6),
-(participanteId, 6550, 'EDIMILSON  MARINHO ', '2024-02-10', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'cartao', 1),
-(participanteId, 6574, 'MONICA MACIEL', '2024-02-11', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 5),
-(participanteId, 6636, 'JENIFER  BARBOZA ', '2024-01-24', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6645, 'MARCELLE LEMOS', '2024-01-29', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6644, 'ANA CAROLINA  BRITTES DE ASSIS MONTEIRO ', '2024-02-05', 'Maruba', 'privê room', 'day 1', 11, 3, 100, 0.1, 'pago', 'cartao', 1),
-(participanteId, 6653, 'PATRICIA LEIBAO DA ROCHA', '2024-01-22', 'Maruba', 'outdoor', 'day 3', 13, 4, 90, 0.1, 'pago', 'cartao', 5),
-(participanteId, 6733, 'PAULA  GUIMARÃES ', '2024-01-27', 'Maruba', 'outdoor', 'day 3', 13, 3, 90, 0.1, 'pago', 'cartao', 2),
-(participanteId, 6733, 'ROSANA  MELO DE OLIVEIRA SIMIÃO', '2024-01-27', 'Maruba', 'privê room', 'day 1', 11, 3, 100, 0.1, 'pago', 'cartao', 2),
-(participanteId, 6780, 'WELLINGTON  SIMIÃO DE SOUZA', '2024-02-11', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'cartao', 3),
-(participanteId, 6821, 'BRUNO VINICIUS DA SILVA DANTAS', '2024-02-08', 'Maruba', 'outdoor', 'day 2', 12, 1, 80, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6829, 'YARLY QUEIROZ DE LIMA', '2024-01-30', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'cartao', 1),
-(participanteId, 6836, 'LIDIANE  JORDÃO ', '2024-01-23', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 6841, 'LEANDRO LEMOS', '2024-01-31', 'Maruba', 'sado room', 'day 2', 12, 1, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 6847, 'RODRIGO  MARTINS DA SILVA', '2024-02-09', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6895, 'PATRICIA RAPHAEL DE MELO', '2024-01-26', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 6905, 'JULIANA VIEIRA', '2024-02-07', 'Maruba', 'privê room', 'day 1', 11, 1, 100, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6933, 'THAÍS PATRÍCIA  PORTO SOARES ', '2024-02-12', 'Maruba', 'sado room', 'day 1', 11, 4, 160, 0.1, 'pago', 'cartao', 1),
-(participanteId, 6931, 'ELIANE  DA ROCHA ARAÚJO ', '2024-01-15', 'Maruba', 'sado room', 'day 3', 13, 4, 200, 0.1, 'pago', 'cartao', 6),
-(participanteId, 6943, 'NATASHA LIGNEUL', '2024-02-02', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6945, 'DOUGLAS  PAGANOTTI SANTOS ', '2024-02-01', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6963, 'RENATA  CARVALHO ', '2024-02-02', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6984, 'LIVIA MARTINS LUNAU', '2024-01-21', 'Maruba', 'sado room', 'day 2', 12, 2, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 6998, 'LUISA TELLEZ', '2024-02-06', 'Maruba', 'privê room', 'day 1', 11, 1, 100, 0.1, 'pago', 'boleto', 0),
-(participanteId, 7013, 'MARA DALILA  FERNANDES ', '2024-02-11', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 7019, 'GILCINEIA  TEIXEIRA CAMARA', '2024-01-29', 'Maruba', 'outdoor', 'day 1', 11, 2, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 7058, 'SARAH PIMENTEL', '2024-01-24', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'boleto', 0),
-(participanteId, 7065, 'MICHELE ROSÁRIO', '2024-01-25', 'Maruba', 'privê room', 'day 2', 12, 4, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 7068, 'ICARO MACEDO BADENES', '2024-02-10', 'Maruba', 'sado room', 'day 2', 12, 2, 180, 0.1, 'pago', 'cartao', 6),
-(participanteId, 7070, 'AMANDA LORENA NUNES CRUZ', '2024-01-25', 'Maruba', 'outdoor', 'day 3', 13, 3, 90, 0.1, 'pago', 'pix', 0),
-(participanteId, 7090, 'SIMONE DOS ANJOS', '2024-01-20', 'Maruba', 'privê room', 'day 2', 12, 4, 120, 0.1, 'pago', 'cartao', 4),
-(participanteId, 7110, 'ROSENILDA  PEREIRA ', '2024-01-25', 'Maruba', 'privê room', 'day 2', 12, 1, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 7111, 'VIVIANE FRAZAO', '2024-01-20', 'Maruba', 'privê room', 'day 1', 11, 3, 100, 0.1, 'pago', 'cartao', 5),
-(participanteId, 7114, 'GABRIELA GAERTNER', '2024-01-28', 'Maruba', 'privê room', 'day 3', 13, 3, 140, 0.1, 'pago', 'cartao', 3),
-(participanteId, 7135, 'ELDA BOTELHO ', '2024-01-20', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 3),
-(participanteId, 7169, 'DANDARA OLIVEIRA SEBASTIÃO', '2024-02-06', 'Maruba', 'privê room', 'day 3', 13, 2, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 7180, 'ALESSANDRA  MARTINS ', '2024-02-12', 'Maruba', 'outdoor', 'day 3', 13, 3, 90, 0.1, 'pago', 'cartao', 4),
-(participanteId, 7184, 'ELISA  FAGUNDES', '2024-01-25', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 7217, 'CRISTIANE  CASSIANO ', '2024-01-21', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'cartao', 6),
-(participanteId, 7268, 'ANALICE  PEREIRA CARVALHO ', '2024-01-17', 'Maruba', 'sado room', 'day 3', 13, 1, 200, 0.1, 'pago', 'cartao', 5),
-(participanteId, 7301, 'TÁBATA GOUVIN', '2024-01-28', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'cartao', 2),
-(participanteId, 7308, 'ORLANDO CRUZ JUNIOR', '2024-01-29', 'Maruba', 'outdoor', 'day 2', 12, 3, 80, 0.1, 'pago', 'cartao', 5),
-(participanteId, 7308, 'JOANNA TOLOMEI ', '2024-01-29', 'Maruba', 'sado room', 'day 3', 13, 3, 200, 0.1, 'pago', 'cartao', 5),
-(participanteId, 7311, 'ROGERIO VILELA RODRIGUES', '2024-02-14', 'Maruba', 'sado room', 'day 1', 11, 4, 160, 0.1, 'pago', 'pix', 0),
-(participanteId, 7380, 'MILLA ZAMPIROLLI DE ALMEIDA RODRIGUES ', '2024-02-10', 'Maruba', 'sado room', 'day 3', 13, 2, 200, 0.1, 'pago', 'cartao', 2),
-(participanteId, 7386, 'VANIA  CRUZ NASCIMENTO ', '2024-01-29', 'Maruba', 'outdoor', 'day 3', 13, 4, 90, 0.1, 'pago', 'cartao', 5),
-(participanteId, 7403, 'MARÍLIA RAMOS COELHO', '2024-01-31', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 7421, 'ALEX EDUARDO  BARBOSA SANTARÉM ', '2024-02-03', 'Maruba', 'sado room', 'day 1', 11, 2, 160, 0.1, 'pago', 'cartao', 2),
-(participanteId, 7436, 'HANNAH  LEAL GOMES ', '2024-01-30', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 5),
-(participanteId, 7435, 'RICARDO UBIRATAN DE BRITO', '2024-01-31', 'Maruba', 'sado room', 'day 1', 11, 3, 160, 0.1, 'pago', 'cartao', 4),
-(participanteId, 7442, 'LUIZ RODRIGO  TOZZI ', '2024-01-31', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 3),
-(participanteId, 7478, 'LOANY GONZAGA', '2024-02-12', 'Maruba', 'outdoor', 'day 2', 12, 1, 80, 0.1, 'pago', 'pix', 0),
-(participanteId, 7478, 'ROMÁRIO CHAVES DELGADO', '2024-02-12', 'Maruba', 'sado room', 'day 2', 12, 1, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 7500, 'RAISSA BRASIL', '2024-01-18', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'pix', 0),
-(participanteId, 7526, 'DELCICLEIDE  MACHADO ', '2024-02-07', 'Maruba', 'sado room', 'day 2', 12, 4, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 7527, 'ANA SANT’ANNA ', '2024-01-29', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'cartao', 1),
-(participanteId, 7533, 'CAMILA MOREIRA', '2024-01-27', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'boleto', 0),
-(participanteId, 7535, 'PAULA MALTA DEL SARTO ', '2024-01-27', 'Maruba', 'privê room', 'day 3', 13, 4, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 7593, 'ANDREIA LOUREIRO ', '2024-01-24', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'cartao', 3),
-(participanteId, 7620, 'ANA MOREIRA', '2024-02-07', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 1),
-(participanteId, 7633, 'DAYSE SILVEIRA DA SILVA ', '2024-01-24', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 7709, 'RAYANNE  EMMANUELLE ', '2024-02-13', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'cartao', 5),
-(participanteId, 7746, 'CAMILLA  BARCELOS ', '2024-02-06', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'cartao', 4),
-(participanteId, 7762, 'GLEIDSON  MUNIZ ', '2024-02-13', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'cartao', 4),
-(participanteId, 7780, 'NATALI  VILAS BOAS SILVEIRA ', '2024-01-15', 'Maruba', 'sado room', 'day 2', 12, 3, 180, 0.1, 'pago', 'cartao', 5),
-(participanteId, 7803, 'MAGALI  SONES ', '2024-02-07', 'Maruba', 'privê room', 'day 1', 11, 4, 100, 0.1, 'pago', 'boleto', 0),
-(participanteId, 7799, 'ANA CLAUDIA MADY DE FREITAS ', '2024-02-12', 'Maruba', 'outdoor', 'day 1', 11, 3, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 7815, 'REBECA FERREIRA SANTOS ', '2024-02-09', 'Maruba', 'privê room', 'day 1', 11, 2, 100, 0.1, 'pago', 'cartao', 5),
-(participanteId, 7834, 'ROGER BRANCO SIMÕES', '2024-02-10', 'Maruba', 'privê room', 'day 2', 12, 1, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 7846, 'LUCAS PRIANTE', '2024-02-14', 'Maruba', 'privê room', 'day 1', 11, 3, 100, 0.1, 'pago', 'cartao', 1),
-(participanteId, 7851, 'CAROLINA BIZOTTO', '2024-01-29', 'Maruba', 'sado room', 'day 2', 12, 1, 180, 0.1, 'pago', 'cartao', 3),
-(participanteId, 7853, 'SAVIO JANNUZZI ', '2024-02-06', 'Maruba', 'privê room', 'day 2', 12, 3, 120, 0.1, 'pago', 'cartao', 5),
-(participanteId, 7862, 'SILVANA  DO NASCIMENTO PAIXÃO ', '2024-01-22', 'Maruba', 'outdoor', 'day 1', 11, 2, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 7867, 'ROSA OLIVEIRA', '2024-01-26', 'Maruba', 'privê room', 'day 1', 11, 2, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 8019, 'LUZIALBA  RODRIGUES MARREIROS ', '2024-02-13', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'boleto', 0),
-(participanteId, 8032, 'ANA  PIO DE SOUZA', '2024-01-21', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 8045, 'ELIANE  CAETANO ', '2024-02-13', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'cartao', 1),
-(participanteId, 8097, 'BÁRBARA  CAETANO', '2024-02-01', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'cartao', 3),
-(participanteId, 8100, 'CAROLINA  CAETANO PINHEIRO DE OLIVEIRA ', '2024-01-29', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'pix', 0),
-(participanteId, 8221, 'KEYNI  AMBROGI LIMA', '2024-01-31', 'Maruba', 'privê room', 'day 1', 11, 4, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 8239, 'FREDERICO PAULO  DE OLIVEIRA CAETANO', '2024-02-12', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 8245, 'LEONARDO PARADELA', '2024-01-19', 'Maruba', 'outdoor', 'day 1', 11, 1, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 8258, 'MARIANA ROCHA', '2024-01-20', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'cartao', 5),
-(participanteId, 8258, 'PAMELLA  SARTORI', '2024-01-20', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'cartao', 5),
-(participanteId, 8271, 'LUIS CARLOS DE ALMEIDA SERPA', '2024-02-05', 'Maruba', 'privê room', 'day 1', 11, 1, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 8306, 'PAULO AFONSO  COELHO', '2024-01-25', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'pix', 0),
-(participanteId, 8310, 'JULYA CRUZ OLÍMPIO DA SILVA', '2024-01-29', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'boleto', 0),
-(participanteId, 8337, 'BETO LUNDGREN COACHING', '2024-01-15', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'cartao', 5),
-(participanteId, 8383, 'REBECA  ANDRADE BARBOSA', '2024-02-06', 'Maruba', 'sado room', 'day 1', 11, 3, 160, 0.1, 'pago', 'boleto', 0),
-(participanteId, 8441, 'RAPHAEL  ORTIZ', '2024-01-23', 'Maruba', 'outdoor', 'day 1', 11, 2, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 8461, 'SIMONE MENDES', '2024-02-02', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'cartao', 1),
-(participanteId, 8515, 'ALESSANDRA  SAYÃO', '2024-01-16', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 8538, 'HYRLLANNA  ALMEIDA DE SOUZA ', '2024-02-13', 'Maruba', 'sado room', 'day 3', 13, 1, 200, 0.1, 'pago', 'boleto', 0),
-(participanteId, 8540, 'ALEXANDRO  LUCAS DE ALMEIDA ', '2024-01-16', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 8548, 'MARIA  MORAES DE ANDRADE', '2024-01-18', 'Maruba', 'sado room', 'day 2', 12, 1, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 8589, 'JOSEANY ALVES', '2024-02-01', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'cartao', 3),
-(participanteId, 8636, 'ANA CLARA  MONTEIRO ', '2024-02-02', 'Maruba', 'sado room', 'day 3', 13, 1, 200, 0.1, 'pago', 'cartao', 2),
-(participanteId, 8677, 'DANIELLE  SOUZA GARCIA CONCEIÇÃO ', '2024-01-29', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'boleto', 0),
-(participanteId, 8692, 'EDILSON REIS', '2024-01-15', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'cartao', 3),
-(participanteId, 8708, 'ANA CLARA CALHEIROS', '2024-02-09', 'Maruba', 'outdoor', 'day 1', 11, 1, 70, 0.1, 'pago', 'cartao', 4),
-(participanteId, 8739, 'NATHALY RABELO', '2024-01-22', 'Maruba', 'outdoor', 'day 3', 13, 4, 90, 0.1, 'pago', 'cartao', 5),
-(participanteId, 8754, 'TALYSSA GAZEL DO NASCIMENTO ', '2024-01-27', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'boleto', 0),
-(participanteId, 8934, 'KALEEN SOUSA LEITE', '2024-02-08', 'Maruba', 'outdoor', 'day 3', 13, 4, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9006, 'CRISTIE  SICSÚ', '2024-01-26', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'cartao', 2),
-(participanteId, 9079, 'ERICK COSTA', '2024-02-01', 'Maruba', 'sado room', 'day 1', 11, 4, 160, 0.1, 'pago', 'cartao', 3),
-(participanteId, 9085, 'FRANCIMAR  SANTOS', '2024-01-29', 'Maruba', 'sado room', 'day 2', 12, 3, 180, 0.1, 'pago', 'cartao', 5),
-(participanteId, 9085, 'FRANCISCA BRITO', '2024-01-29', 'Maruba', 'privê room', 'day 1', 11, 3, 100, 0.1, 'pago', 'cartao', 5),
-(participanteId, 9102, 'LUCIANA MELO', '2024-02-06', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 1),
-(participanteId, 9116, 'YAGO FERREIRA', '2024-02-06', 'Maruba', 'outdoor', 'day 1', 11, 1, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9126, 'CIBELE  MONTEFUSCO', '2024-01-18', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 5),
-(participanteId, 9138, 'TALYSSA GAZEL', '2024-01-28', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'cartao', 1),
-(participanteId, 9163, 'NERISSA CAVALCANTE', '2024-02-10', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9169, 'JOSE PABULO DE SOUZA', '2024-01-30', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9177, 'LUANA CARVALHO', '2024-02-06', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 4),
-(participanteId, 9181, 'HEBERT  SAMPAIO ', '2024-01-21', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9208, 'JOÃO PIETRO  CARVALHO', '2024-02-13', 'Maruba', 'outdoor', 'day 1', 11, 4, 70, 0.1, 'pago', 'cartao', 1),
-(participanteId, 9208, 'BRUNA LOPES', '2024-02-13', 'Maruba', 'sado room', 'day 2', 12, 4, 180, 0.1, 'pago', 'cartao', 1),
-(participanteId, 9215, 'FLAVIA  GALLINDO', '2024-01-23', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 5),
-(participanteId, 9234, 'NATHALIE BRASIL', '2024-02-09', 'Maruba', 'outdoor', 'day 1', 11, 3, 70, 0.1, 'pago', 'pix', 0),
-(participanteId, 9276, 'NATHALIE LEITE', '2024-01-26', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9291, 'ALDENIZE CHAGAS DE SOUSA SOUSA', '2024-02-09', 'Maruba', 'privê room', 'day 1', 11, 3, 100, 0.1, 'pago', 'cartao', 4),
-(participanteId, 9312, 'YANO RODRIGUES', '2024-02-11', 'Maruba', 'privê room', 'day 2', 12, 4, 120, 0.1, 'pago', 'cartao', 2),
-(participanteId, 9316, 'YANO RODRIGUES DA SILVA', '2024-01-15', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'cartao', 1),
-(participanteId, 9339, 'AMANDA MONTEIRO', '2024-02-13', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'cartao', 4),
-(participanteId, 9347, 'CAMILLE DINARAY LEVY ANGELIM ', '2024-01-21', 'Maruba', 'sado room', 'day 1', 11, 3, 160, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9350, 'NATALIA  CAMPOS', '2024-01-22', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9352, 'MARCELE GUIMARAES', '2024-02-02', 'Maruba', 'outdoor', 'day 1', 11, 3, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9357, 'SARAH FURTADO', '2024-02-03', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'cartao', 3),
-(participanteId, 9367, 'MICHELE MACIEL', '2024-02-13', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 9370, 'DENISE GUIMARAES ', '2024-02-07', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 9405, 'SABRINA MONTEIRO', '2024-02-09', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 9408, 'SANDRA BERNARDA', '2024-02-05', 'Maruba', 'outdoor', 'day 1', 11, 4, 70, 0.1, 'pago', 'cartao', 4),
-(participanteId, 9425, 'YASMIM MONTEIRO', '2024-01-17', 'Maruba', 'sado room', 'day 1', 11, 3, 160, 0.1, 'pago', 'cartao', 4),
-(participanteId, 9434, 'JUMARA PIMENTA', '2024-02-05', 'Maruba', 'outdoor', 'day 3', 13, 3, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9440, 'FLÁVIA  LUZ', '2024-01-28', 'Maruba', 'privê room', 'day 1', 11, 3, 100, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9476, 'EDUARDA ATAHYDE', '2024-02-05', 'Maruba', 'privê room', 'day 1', 11, 3, 100, 0.1, 'pago', 'cartao', 2),
-(participanteId, 9482, 'MIRYAM SAAD', '2024-02-05', 'Maruba', 'privê room', 'day 2', 12, 4, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9491, 'ALCIANE ROCHA', '2024-02-01', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 9503, 'ESTER  SILVA ', '2024-02-10', 'Maruba', 'privê room', 'day 2', 12, 1, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9527, 'CAROLINE MARROCOS ALVES', '2024-02-13', 'Maruba', 'sado room', 'day 2', 12, 4, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9532, 'JUMARA SOUZA PIMENTA', '2024-02-11', 'Maruba', 'sado room', 'day 1', 11, 1, 160, 0.1, 'pago', 'cartao', 5),
-(participanteId, 9545, 'SARAH  COSTA ', '2024-01-18', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 9552, 'BIANCA GONZAGA ', '2024-01-16', 'Maruba', 'sado room', 'day 3', 13, 2, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 9588, 'AMANDA PRESTES', '2024-02-07', 'Maruba', 'privê room', 'day 3', 13, 2, 140, 0.1, 'pago', 'cartao', 2),
-(participanteId, 9599, 'VICTOR ARAUJO', '2024-01-20', 'Maruba', 'sado room', 'day 2', 12, 4, 180, 0.1, 'pago', 'cartao', 2),
-(participanteId, 9606, 'MARILENA  NASCIMENTO ', '2024-01-28', 'Maruba', 'privê room', 'day 3', 13, 3, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 9607, 'WILKER PEREIRA', '2024-01-30', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'cartao', 4),
-(participanteId, 9608, 'MÁRCIA  CAMINHA ', '2024-01-31', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9617, 'LEANDRO ALMEIDA', '2024-01-22', 'Maruba', 'sado room', 'day 2', 12, 2, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 9617, 'MÔNICA POTY', '2024-01-22', 'Maruba', 'privê room', 'day 3', 13, 2, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 9618, 'RAINÉRIO SANTOS COSTA', '2024-02-10', 'Maruba', 'privê room', 'day 2', 12, 3, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9618, 'MÁRCIA CAMINHA', '2024-02-10', 'Maruba', 'outdoor', 'day 1', 11, 3, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9620, 'MARCOS COSTA', '2024-01-27', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'cartao', 6),
-(participanteId, 9633, 'YASMIN  FEITOSA', '2024-02-05', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9642, 'ALCIANE  ROCHA', '2024-02-07', 'Maruba', 'outdoor', 'day 1', 11, 3, 70, 0.1, 'pago', 'cartao', 2),
-(participanteId, 9640, 'DANIEL  CUNHA', '2024-01-18', 'Maruba', 'outdoor', 'day 1', 11, 2, 70, 0.1, 'pago', 'cartao', 5),
-(participanteId, 9648, 'CINTHIA SÁ', '2024-01-30', 'Maruba', 'outdoor', 'day 1', 11, 2, 70, 0.1, 'pago', 'cartao', 2),
-(participanteId, 9651, 'LEONARDO MOTA', '2024-02-13', 'Maruba', 'sado room', 'day 2', 12, 3, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9653, 'JOÃO ANTÔNIO  OLIVEIRA DA SILVA', '2024-02-07', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'cartao', 2),
-(participanteId, 9659, 'IOLENE  SOUZA', '2024-01-24', 'Maruba', 'privê room', 'day 1', 11, 2, 100, 0.1, 'pago', 'cartao', 4),
-(participanteId, 9665, 'MARIANA FINOTTI', '2024-02-03', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 9671, 'SHAUANA NOGUEIRA', '2024-02-06', 'Maruba', 'privê room', 'day 2', 12, 1, 120, 0.1, 'pago', 'pix', 0),
-(participanteId, 9677, 'CARLA NOGUEIRA', '2024-01-15', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'cartao', 3),
-(participanteId, 9685, 'PAOLA RODRIGUES', '2024-01-21', 'Maruba', 'outdoor', 'day 3', 13, 2, 90, 0.1, 'pago', 'cartao', 1),
-(participanteId, 9698, 'JULIE ALENCAR', '2024-01-26', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 9699, 'DANIEL  FERREIRA', '2024-01-31', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9702, 'MÔNICA ROCHA', '2024-01-27', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9703, 'DENYS CRUZ', '2024-02-03', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9703, 'FELIPE ZANUSSO SOUZA', '2024-02-03', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9712, 'MÁRCIA  ZANUSSO', '2024-02-11', 'Maruba', 'sado room', 'day 3', 13, 2, 200, 0.1, 'pago', 'cartao', 2),
-(participanteId, 9715, 'ADRIELY LAIS DE SOUZA PEREIRA ', '2024-01-27', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 2),
-(participanteId, 9722, 'GRAZIELE GARCIA DE SOUZA DE AMARAL', '2024-01-27', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'cartao', 3),
-(participanteId, 9728, 'VIVIANE CAPELLA', '2024-01-15', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9734, 'ANDRÉA AZEVEDO  BEZERRA ', '2024-01-20', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 5),
-(participanteId, 9741, 'CAMILA  DANTAS', '2024-01-22', 'Maruba', 'sado room', 'day 3', 13, 3, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 9742, 'VINICIUS FAVERO', '2024-02-11', 'Maruba', 'sado room', 'day 1', 11, 2, 160, 0.1, 'pago', 'pix', 0),
-(participanteId, 9748, 'MARCELO THOMAZINI', '2024-02-08', 'Maruba', 'privê room', 'day 1', 11, 4, 100, 0.1, 'pago', 'cartao', 4),
-(participanteId, 9752, 'MARCUS ANDRÉ  RABELO', '2024-01-22', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'cartao', 5),
-(participanteId, 9754, 'ANA LUIZA CLEMENTINO DA SILVA', '2024-02-14', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'pix', 0),
-(participanteId, 9754, 'JÉSSICA  GONZAGA NAPOLEÃO VALOIS ', '2024-02-14', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'pix', 0),
-(participanteId, 9757, 'RAQUEL KARINA  CARDOSO DE SOUZA ', '2024-02-10', 'Maruba', 'privê room', 'day 3', 13, 1, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9764, 'LAION NOGUEIRA', '2024-02-13', 'Maruba', 'outdoor', 'day 3', 13, 3, 90, 0.1, 'pago', 'cartao', 3),
-(participanteId, 9767, 'JOAQUIM DE J. GOMES NOGUEIRA', '2024-01-15', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'pix', 0),
-(participanteId, 9768, 'ANA M. FERREIRA XAVIER', '2024-02-09', 'Maruba', 'privê room', 'day 1', 11, 2, 100, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9768, 'RODRIGO  MOREIRA ', '2024-02-09', 'Maruba', 'sado room', 'day 1', 11, 2, 160, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9784, 'GECYLANE LIMA', '2024-01-27', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9787, 'BRUNA CECÍLIA  DE OLIVEIRA GOMES ', '2024-02-13', 'Maruba', 'outdoor', 'day 3', 13, 1, 90, 0.1, 'pago', 'pix', 0),
-(participanteId, 9789, 'CAROLINE AMENDOLA ', '2024-01-20', 'Maruba', 'outdoor', 'day 1', 11, 3, 70, 0.1, 'pago', 'pix', 0),
-(participanteId, 9792, 'ANDRESSA  CHAVES', '2024-01-17', 'Maruba', 'sado room', 'day 2', 12, 3, 180, 0.1, 'pago', 'cartao', 6),
-(participanteId, 9805, 'CAMILA RODRIGUES DA COSTA  RODRIGUES ', '2024-02-09', 'Maruba', 'sado room', 'day 3', 13, 3, 200, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9817, 'MÔNICA RAFAELLA MACEDO', '2024-02-13', 'Maruba', 'outdoor', 'day 1', 11, 4, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9821, 'MÔNICA RAFAELLA  DOS SANTOS ', '2024-02-05', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9823, 'ROGÉRIO ARAÚJO TEIXEIRA', '2024-02-13', 'Maruba', 'privê room', 'day 1', 11, 2, 100, 0.1, 'pago', 'cartao', 2),
-(participanteId, 9824, 'JANETH FERNANDES ', '2024-01-17', 'Maruba', 'sado room', 'day 2', 12, 3, 180, 0.1, 'pago', 'cartao', 5),
-(participanteId, 9826, 'KAREN DE SANTIS', '2024-01-21', 'Maruba', 'sado room', 'day 2', 12, 2, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 9834, 'ALEXIA  LUIZA', '2024-02-08', 'Maruba', 'privê room', 'day 1', 11, 2, 100, 0.1, 'pago', 'cartao', 6),
-(participanteId, 9839, 'ALEXIA COSTA', '2024-02-01', 'Maruba', 'sado room', 'day 2', 12, 3, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 9839, 'GABRIELLE ANDRADE RIBEIRO', '2024-02-01', 'Maruba', 'privê room', 'day 3', 13, 3, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 9847, 'VIVIAN FERNANDA  CARNEIRO MARTINS ', '2024-02-09', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'cartao', 6),
-(participanteId, 9850, 'ELLEN NEGREIROS ', '2024-01-16', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'cartao', 1),
-(participanteId, 9853, 'ELLEN AMAZONIA', '2024-02-07', 'Maruba', 'outdoor', 'day 3', 13, 1, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9858, 'ELLEN  OLIVEIRA ', '2024-02-03', 'Maruba', 'privê room', 'day 2', 12, 4, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9859, 'SERGIO MAURÍCIO', '2024-01-28', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9866, 'ANDRE LUIZ  ANDRADE', '2024-01-23', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 9868, 'DOMENICA  SARKOVAS ', '2024-02-04', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 5),
-(participanteId, 9871, 'MARCELLY XAVIER', '2024-02-08', 'Maruba', 'sado room', 'day 1', 11, 1, 160, 0.1, 'pago', 'cartao', 6),
-(participanteId, 9871, 'LIVIA  COSTA DA SILVA', '2024-02-08', 'Maruba', 'sado room', 'day 3', 13, 1, 200, 0.1, 'pago', 'cartao', 6),
-(participanteId, 9874, 'RACHEL LOBO', '2024-02-03', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'cartao', 3),
-(participanteId, 9881, 'FABIO CARLOS  DA PAZ', '2024-01-22', 'Maruba', 'privê room', 'day 3', 13, 1, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9882, 'NATÁLIA TUPINAMBÁ', '2024-01-20', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'cartao', 2),
-(participanteId, 9887, 'CAMILA  LOPES', '2024-01-20', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'pix', 0),
-(participanteId, 9891, 'ERIKA  SANTANA', '2024-01-18', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9893, 'CAMILA LOPES', '2024-01-25', 'Maruba', 'outdoor', 'day 1', 11, 3, 70, 0.1, 'pago', 'pix', 0),
-(participanteId, 9892, 'THIAGO SILVA', '2024-02-13', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'cartao', 1),
-(participanteId, 9895, 'ÍCARO FREITAS', '2024-01-22', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9906, 'WALTER JUUR', '2024-01-16', 'Maruba', 'privê room', 'day 1', 11, 3, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 9908, 'ROBERTA  FURTADO ', '2024-01-15', 'Maruba', 'outdoor', 'day 2', 12, 3, 80, 0.1, 'pago', 'cartao', 4),
-(participanteId, 9909, 'MAYARA  CARVALHO ', '2024-01-30', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9910, 'MARCOS  ALVES', '2024-02-09', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 4),
-(participanteId, 9910, 'JAQUELINE  SARMENTO DA SILVA ', '2024-02-09', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 4),
-(participanteId, 9916, 'OSMAR CRISTIANO NEVES', '2024-02-12', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'cartao', 6),
-(participanteId, 9919, 'GABRIELA  SEQUEIRA DA SILVA ', '2024-01-25', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9925, 'ANA PAULA MENDONÇA MONTEIRO', '2024-02-13', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'cartao', 2),
-(participanteId, 9928, 'SELMA SEQUEIRA DA SILVA ', '2024-01-31', 'Maruba', 'sado room', 'day 3', 13, 3, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 9938, 'CHARLANYS SANTOS ', '2024-01-17', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'cartao', 5),
-(participanteId, 9941, 'CAMILA CAMPOS', '2024-02-04', 'Maruba', 'privê room', 'day 3', 13, 3, 140, 0.1, 'pago', 'cartao', 1),
-(participanteId, 9943, 'JÉSSICA SANTOS SILVA', '2024-01-16', 'Maruba', 'sado room', 'day 3', 13, 3, 200, 0.1, 'pago', 'boleto', 0),
-(participanteId, 9948, 'MANUELA PREZZI', '2024-01-23', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'cartao', 2),
-(participanteId, 9953, 'GUSTAVO LACOMBE', '2024-01-28', 'Maruba', 'privê room', 'day 3', 13, 4, 140, 0.1, 'pago', 'cartao', 1),
-(participanteId, 9955, 'ROBERTO  DE SOUZA ', '2024-01-18', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'cartao', 1),
-(participanteId, 9962, 'JESSICA PINHEIRO', '2024-01-27', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'cartao', 4),
-(participanteId, 9965, 'BEATRIZ DA COSTA', '2024-01-19', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'cartao', 4),
-(participanteId, 9968, 'ROBERTA  CAMPELO', '2024-01-30', 'Maruba', 'sado room', 'day 3', 13, 4, 200, 0.1, 'pago', 'cartao', 1),
-(participanteId, 9970, 'NATALIA GAMA', '2024-01-17', 'Maruba', 'sado room', 'day 3', 13, 1, 200, 0.1, 'pago', 'cartao', 3),
-(participanteId, 9975, 'LARA SILVA', '2024-01-24', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'pix', 0),
-(participanteId, 9985, 'JEAN PAULO COSTA', '2024-02-02', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 1),
-(participanteId, 9990, 'MARCIA  BRANDÃO DE ARAUJO OLIVEIRA ', '2024-02-04', 'Maruba', 'privê room', 'day 3', 13, 3, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 10006, 'ANANDA  PRAIA', '2024-02-03', 'Maruba', 'outdoor', 'day 2', 12, 2, 80, 0.1, 'pago', 'boleto', 0),
-(participanteId, 10013, 'LÍVIA BIBAS', '2024-02-03', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'cartao', 4),
-(participanteId, 10016, 'MARCELO FILHO', '2024-02-13', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'boleto', 0),
-(participanteId, 10024, 'CONCEICAO APARECIDA DE MARTINS', '2024-01-21', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 10026, 'VIVIAN SCHEIDEGGER WENDOS PEREIRA ', '2024-02-02', 'Maruba', 'sado room', 'day 2', 12, 4, 180, 0.1, 'pago', 'cartao', 4),
-(participanteId, 10032, 'RAFAEL LOPES PEREIRA', '2024-01-31', 'Maruba', 'sado room', 'day 1', 11, 1, 160, 0.1, 'pago', 'cartao', 5),
-(participanteId, 10034, 'MADALENA VIEIRA', '2024-02-02', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 6),
-(participanteId, 10035, 'BRUNA  SOUZA', '2024-02-06', 'Maruba', 'sado room', 'day 1', 11, 3, 160, 0.1, 'pago', 'boleto', 0),
-(participanteId, 10038, 'LUIZ FELIPE  SILVA XAVIER ', '2024-02-01', 'Maruba', 'sado room', 'day 3', 13, 1, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 10043, 'ANNAMARIA MARCHESINI', '2024-01-29', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'cartao', 5),
-(participanteId, 10049, 'ESTHER NOBRE', '2024-01-30', 'Maruba', 'sado room', 'day 2', 12, 2, 180, 0.1, 'pago', 'cartao', 4),
-(participanteId, 10053, 'GEISIANE LIMA', '2024-02-13', 'Maruba', 'outdoor', 'day 2', 12, 3, 80, 0.1, 'pago', 'cartao', 1),
-(participanteId, 10053, 'MAYARA  PESSOA ', '2024-02-13', 'Maruba', 'privê room', 'day 2', 12, 3, 120, 0.1, 'pago', 'cartao', 1),
-(participanteId, 10055, 'JOÃO VITOR SILVA DE SOUZA', '2024-02-12', 'Maruba', 'privê room', 'day 1', 11, NULL, 100, 0.1, 'pago', 'cartao', 6),
-(participanteId, 10057, 'CAMILA MATOS', '2024-01-19', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 10058, 'JOÃO SILVA', '2024-01-25', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'boleto', 0),
-(participanteId, 10060, 'CAROLINA  COSTA', '2024-01-24', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'cartao', 3),
-(participanteId, 10066, 'CAROLINE  GAMA', '2024-02-13', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'cartao', 3),
-(participanteId, 10068, 'JOSÉ ADRIANO CASTRO DE OLIVEIRA JÚNIOR', '2024-01-25', 'Maruba', 'privê room', 'day 1', 11, 4, 100, 0.1, 'pago', 'cartao', 4),
-(participanteId, 10072, 'MARCOS ROCHA', '2024-02-12', 'Maruba', 'privê room', 'day 1', 11, 3, 100, 0.1, 'pago', 'cartao', 1),
-(participanteId, 10074, 'PRISCILA  DA ROCHA SAVINO ', '2024-02-01', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 10081, 'ROZANA  TRILHA ', '2024-01-23', 'Maruba', 'sado room', 'day 2', 12, 3, 180, 0.1, 'pago', 'cartao', 2),
-(participanteId, 10082, 'ELIZETE  GOMES DE SOUZA ', '2024-02-06', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 4),
-(participanteId, 10082, 'RAFAEL TRISTAO', '2024-02-06', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'cartao', 4),
-(participanteId, 10090, 'PAULA GABRIEL', '2024-01-28', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 1),
-(participanteId, 10089, 'LEANDRO AUGUSTO LEITE DOS SANTOS', '2024-02-01', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 2),
-(participanteId, 10092, 'CARINA  CASTRO SANTOS GUEDES ', '2024-01-25', 'Maruba', 'outdoor', 'day 2', 12, 2, 80, 0.1, 'pago', 'boleto', 0),
-(participanteId, 10099, 'ANA PAULA BELLO DE SOUSA BEZERRA', '2024-02-07', 'Maruba', 'privê room', 'day 3', 13, 2, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 10099, 'NATHALY  MARCULINO ', '2024-02-07', 'Maruba', 'outdoor', 'day 2', 12, 2, 80, 0.1, 'pago', 'pix', 0),
-(participanteId, 10107, 'VALÉRIA MARQUES', '2024-02-06', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'cartao', 1),
-(participanteId, 10111, 'ADRIANO GABRIEL VELLOSO BILBY', '2024-02-09', 'Maruba', 'privê room', 'day 2', 12, 3, 120, 0.1, 'pago', 'cartao', 6),
-(participanteId, 10116, 'PATRICIA ARAÚJO', '2024-01-21', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'boleto', 0),
-(participanteId, 10135, 'ANA PAULA BEZERRA', '2024-01-24', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 1),
-(participanteId, 10136, 'LAY AMORIM ', '2024-02-06', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'cartao', 1),
-(participanteId, 10139, 'RODRIGO SILVA DE MELO', '2024-01-30', 'Maruba', 'outdoor', 'day 3', 13, 1, 90, 0.1, 'pago', 'cartao', 2),
-(participanteId, 10140, 'JOSE  LUCAS DE JESUS CANDIDO', '2024-02-01', 'Maruba', 'outdoor', 'day 3', 13, 4, 90, 0.1, 'pago', 'cartao', 1),
-(participanteId, 10148, 'MARCELO  FRANCISCO COELHO', '2024-02-06', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 5),
-(participanteId, 10149, 'LUCIANI PINTO', '2024-01-21', 'Maruba', 'outdoor', 'day 1', 11, 4, 70, 0.1, 'pago', 'cartao', 5),
-(participanteId, 10151, 'NICHOLAS BITTENCOURT', '2024-02-02', 'Maruba', 'sado room', 'day 2', 12, 1, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 10151, 'BRENNER TENAZOR', '2024-02-02', 'Maruba', 'sado room', 'day 3', 13, 1, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 10157, 'YNARA  MIKILIS', '2024-01-16', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'cartao', 1),
-(participanteId, 10158, 'MARCIO B R SILVA', '2024-01-23', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'cartao', 3),
-(participanteId, 10159, 'JAÚ RIBEIRO VIEIRA', '2024-01-21', 'Maruba', 'outdoor', 'day 2', 12, 4, 80, 0.1, 'pago', 'cartao', 2),
-(participanteId, 10159, 'LORRAINE  MATTOS ', '2024-01-21', 'Maruba', 'sado room', 'day 1', 11, 4, 160, 0.1, 'pago', 'cartao', 2),
-(participanteId, 10162, 'RAPHAELA  DIOHANA', '2024-02-01', 'Maruba', 'sado room', 'day 3', 13, 3, 200, 0.1, 'pago', 'pix', 0),
-(participanteId, 10164, 'SHARLENE ARAÚJO', '2024-02-06', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 3),
-(participanteId, 10172, 'FLÁVIA GOMES', '2024-02-01', 'Maruba', 'outdoor', 'day 1', 11, NULL, 70, 0.1, 'pago', 'boleto', 0),
-(participanteId, 10172, 'CAIO VINICIUS ', '2024-02-01', 'Maruba', 'sado room', 'day 3', 13, NULL, 200, 0.1, 'pago', 'boleto', 0),
-(participanteId, 10176, 'ALINE  DUARTE ', '2024-01-18', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 2),
-(participanteId, 10181, 'JÉSSICA  NERY', '2024-01-25', 'Maruba', 'privê room', 'day 3', 13, 2, 140, 0.1, 'pago', 'cartao', 3),
-(participanteId, 10190, 'CARLA  DAMASCENO ', '2024-02-12', 'Maruba', 'privê room', 'day 2', 12, 4, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 10188, 'EDINHO CRUZ', '2024-01-18', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'pix', 0),
-(participanteId, 10192, 'JULIANA  NEVES ', '2024-01-28', 'Maruba', 'outdoor', 'day 1', 11, 3, 70, 0.1, 'pago', 'pix', 0),
-(participanteId, 10198, 'WALTER BARRETO JÚNIOR', '2024-02-04', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'pix', 0),
-(participanteId, 10198, 'FERNANDA  DOS PASSOS CRUZ ', '2024-02-04', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 10206, 'JOÃO PEDRO ARAÚJO', '2024-02-14', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'boleto', 0),
-(participanteId, 10208, 'LAURIE RODRIGUES', '2024-01-29', 'Maruba', 'outdoor', 'day 2', 12, 2, 80, 0.1, 'pago', 'boleto', 0),
-(participanteId, 10210, 'DENISE ROSA SANTOS  SANTOS ', '2024-02-04', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'pix', 0),
-(participanteId, 10211, 'MARIA CLARA CASTIGLIA', '2024-01-17', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'cartao', 2),
-(participanteId, 10224, 'ANDREINA  BARBOSA', '2024-02-10', 'Maruba', 'sado room', 'day 2', 12, 3, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 10230, 'DENISE ROSA  SANTOS ', '2024-01-25', 'Maruba', 'outdoor', 'day 3', 13, 1, 90, 0.1, 'pago', 'boleto', 0),
-(participanteId, 10235, 'RICARDO  CUNHA', '2024-01-27', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 6),
-(participanteId, 10236, 'FRANCISCO JORGE  MESQUITA ', '2024-02-07', 'Maruba', 'privê room', 'day 2', 12, 3, 120, 0.1, 'pago', 'cartao', 6),
-(participanteId, 10239, 'GRAZIELE GUERREIRO', '2024-02-03', 'Maruba', 'privê room', 'day 3', 13, 3, 140, 0.1, 'pago', 'boleto', 0),
-(participanteId, 10242, 'MATHEUS  BRASIL', '2024-02-08', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'cartao', 4),
-(participanteId, 10244, 'JULIANA  GOMES DA COSTA DE AZEVEDO ', '2024-02-07', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 10247, 'EMANUELLY  ALMEIDA', '2024-01-31', 'Maruba', 'outdoor', 'day 2', 12, 2, 80, 0.1, 'pago', 'boleto', 0),
-(participanteId, 10247, 'JULIANA GOMES DA COSTA DE AZEVEDO', '2024-01-31', 'Maruba', 'privê room', 'day 2', 12, 2, 120, 0.1, 'pago', 'boleto', 0),
-(participanteId, 10262, 'REBECA  GADELHA DA SILVA', '2024-01-22', 'Maruba', 'privê room', 'day 2', 12, 1, 120, 0.1, 'pago', 'cartao', 1),
-(participanteId, 10265, 'KETHELEN  SILVA ', '2024-02-06', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'cartao', 4),
-(participanteId, 10269, 'LARISSA  GADELHA FREITAS DA SILVA ', '2024-02-12', 'Maruba', 'privê room', 'day 2', 12, 4, 120, 0.1, 'pago', 'cartao', 3),
-(participanteId, 10278, 'JOICIMONE PEREIRA', '2024-02-10', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'pix', 0),
-(participanteId, 10280, 'BEATRIZ GUIMARÃES DA CONCEIÇÃO', '2024-02-06', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'pix', 0),
-(participanteId, 10280, 'VITOR MOTTA', '2024-02-06', 'Maruba', 'outdoor', 'day 2', 12, NULL, 80, 0.1, 'pago', 'pix', 0),
-(participanteId, 10285, 'NOELE ANDRADE', '2024-01-21', 'Maruba', 'privê room', 'day 1', 11, 3, 100, 0.1, 'pago', 'cartao', 1),
-(participanteId, 10292, 'BEATRIZ DA CONCEIÇÃO', '2024-01-21', 'Maruba', 'sado room', 'day 2', 12, NULL, 180, 0.1, 'pago', 'cartao', 1),
-(participanteId, 10294, 'ROBERTO COSTA', '2024-01-16', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 3),
-(participanteId, 10295, 'GIOVANA FIGUEIREDO', '2024-02-09', 'Maruba', 'privê room', 'day 3', 13, NULL, 140, 0.1, 'pago', 'cartao', 4),
-(participanteId, 10298, 'GIOVANA COSTA', '2024-01-31', 'Maruba', 'outdoor', 'day 2', 12, 1, 80, 0.1, 'pago', 'cartao', 6),
-(participanteId, 10299, 'LUCKA  BUTTER', '2024-01-27', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 3),
-(participanteId, 10301, 'JOSELIA CONCEIÇÃO SOUSA DA  SILVA', '2024-02-06', 'Maruba', 'outdoor', 'day 2', 12, 4, 80, 0.1, 'pago', 'cartao', 6),
-(participanteId, 10304, 'LUANA JASSET', '2024-02-05', 'Maruba', 'outdoor', 'day 2', 12, 4, 80, 0.1, 'pago', 'pix', 0),
-(participanteId, 10303, 'ELISABETE  DE OLIVEIRA GOMES ', '2024-01-18', 'Maruba', 'sado room', 'day 1', 11, NULL, 160, 0.1, 'pago', 'cartao', 6),
-(participanteId, 10303, 'PRISCIA GONÇALVES DAMASIO', '2024-01-18', 'Maruba', 'privê room', 'day 2', 12, NULL, 120, 0.1, 'pago', 'cartao', 6),
-(participanteId, 10305, 'DIEGO MOTA DE SOUZA ', '2024-01-25', 'Maruba', 'outdoor', 'day 3', 13, NULL, 90, 0.1, 'pago', 'pix', 0);
+INSERT INTO vendas VALUES (participanteId, 4558, "ANDREW ANTHONY ABATE", '2024-01-25', "Maruba", "Standard", "day 2", 12, 3, 180, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 4558, "VINCENT PAUL ABATE", '2024-01-25', "Maruba", "VIP", "day 1", 11, 3, 100, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 4558, "LAURENCE CHRISTOPHER ABEL", '2024-01-25', "Maruba", "Standard", "day 2", 12, 3, 180, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 4559, "WILLIAM F. ABRAHAMSON", '2024-01-15', "Maruba", "Plus", "day 3", 13, 1, 90, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 4559, "RICHARD ANTHONY ACETO", '2024-01-15', "Maruba", "Plus", "day 2", 12, 1, 80, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 4562, "PAUL ACQUAVIVA", '2024-02-02', "Maruba", "Plus", "day 2", 12, 3, 80, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 4565, "DONALD LAROY ADAMS", '2024-01-25', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 4567, "SHANNON LEWIS ADAMS", '2024-02-03', "Maruba", "Standard", "day 1", 11, 4, 160, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 4576, "STEPHEN GEORGE ADAMS", '2024-02-12', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 4579, "IGNATIUS UDO ADANGA", '2024-01-20', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4583, "CHRISTY A. ADDAMO", '2024-01-31', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4601, "TERENCE EDWARD ADDERLEY JR.", '2024-01-25', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 4642, "SOPHIA B. ADDO", '2024-01-30', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4780, "LEE ADLER", '2024-02-08', "Maruba", "Plus", "day 3", 13, 4, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 4787, "DANIEL THOMAS AFFLITTO", '2024-02-08', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4799, "EMMANUEL AKWASI AFUAKWAH", '2024-01-28', "Maruba", "Plus", "day 3", 13, 2, 90, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 4812, "ALOK AGARWAL", '2024-02-05', "Maruba", "Plus", "day 1", 11, 3, 70, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4814, "DAVID SCOTT AGNES", '2024-02-03', "Maruba", "Standard", "day 2", 12, 3, 180, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 4815, "JOANNE MARIE AHLADIOTIS", '2024-02-08', "Maruba", "Standard", "day 1", 11, 3, 160, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 4820, "SHABBIR AHMED", '2024-02-11', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4820, "TERRANCE ANDRE AIKEN", '2024-02-11', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4821, "TRUDI M. ALAGERO", '2024-01-15', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 4830, "ANDREW ALAMENO", '2024-02-08', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4843, "JON LESLIE ALBERT", '2024-02-08', "Maruba", "Standard", "day 3", 13, 2, 200, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 4843, "PETER CRAIG ALDERMAN", '2024-02-08', "Maruba", "Standard", "day 2", 12, 2, 180, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 4837, "JACQUELYN DELAINE ALDRIDGE-FREDERICK", '2024-01-27', "Maruba", "Plus", "day 3", 13, 3, 90, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 4848, "DAVID D. ALGER", '2024-02-03', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 4853, "EDWARD L. ALLEGRETTO", '2024-01-16', "Maruba", "VIP", "day 3", 13, 1, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4841, "JOSEPH RYAN ALLEN", '2024-01-26', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 4852, "RICHARD L. ALLEN", '2024-01-23', "Maruba", "VIP", "day 3", 13, 1, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4851, "CHRISTOPHER E. ALLINGHAM", '2024-02-07', "Maruba", "Standard", "day 3", 13, 2, 200, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 4866, "JANET MARIE ALONSO", '2024-02-07', "Maruba", "VIP", "day 1", 11, 4, 100, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 4874, "ANTHONY ALVARADO", '2024-01-29', "Maruba", "Standard", "day 1", 11, 1, 160, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4877, "ANTONIO JAVIER ALVAREZ", '2024-01-29', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 4878, "VICTORIA ALVAREZ-BRITO", '2024-01-28', "Maruba", "Standard", "day 2", 12, 1, 180, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 4885, "TELMO E. ALVEAR", '2024-02-05', "Maruba", "Plus", "day 2", 12, 1, 80, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4883, "CESAR AMORANTO ALVIAR", '2024-01-29', "Maruba", "Plus", "day 1", 11, 3, 70, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 4888, "ANGELO AMARANTO", '2024-01-23', "Maruba", "VIP", "day 3", 13, 2, 140, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 4891, "KAZUHIRO ANAI", '2024-02-06', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4892, "KERMIT CHARLES ANDERSON", '2024-02-08', "Maruba", "VIP", "day 2", 12, 3, 120, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 4896, "MICHAEL ROURKE ANDREWS", '2024-01-22', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 4897, "JEAN ANN ANDRUCKI", '2024-01-15', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 4901, "SIEW-NYA ANG", '2024-02-08', "Maruba", "VIP", "day 2", 12, 4, 120, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 4912, "LAURA ANGILLETTA", '2024-01-16', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 4913, "DOREEN J. ANGRISANI", '2024-02-14', "Maruba", "VIP", "day 3", 13, 4, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4917, "LORRAINE ANTIGUA", '2024-02-09', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4920, "PETER PAUL APOLLO", '2024-02-13', "Maruba", "Plus", "day 2", 12, 1, 80, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 4919, "FRANK THOMAS AQUILINO", '2024-02-08', "Maruba", "Standard", "day 2", 12, 2, 180, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 4925, "MICHAEL J. ARMSTRONG", '2024-02-13', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 4926, "JACK CHARLES ARON", '2024-02-09', "Maruba", "VIP", "day 1", 11, 2, 100, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 4922, "JOSHUA TODD ARON", '2024-01-29', "Maruba", "VIP", "day 1", 11, 1, 100, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 4922, "RICHARD AVERY ARONOW", '2024-01-29', "Maruba", "Plus", "day 2", 12, 1, 80, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 4928, "MICHAEL A. ASCIAK", '2024-01-20', "Maruba", "Plus", "day 1", 11, 1, 70, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4946, "MICHAEL EDWARD ASHER", '2024-01-28', "Maruba", "Plus", "day 1", 11, 2, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 4950, "JANICE MARIE ASHLEY", '2024-02-01', "Maruba", "Standard", "day 2", 12, 1, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4954, "THOMAS J. ASHTON", '2024-01-25', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 4965, "MANUEL O. ASITIMBAY", '2024-02-13', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4966, "JAMES AUDIFFRED", '2024-01-26', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 4969, "EZRA AVILES", '2024-02-06', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 4971, "SANDY AYALA", '2024-02-05', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 4974, "ARLENE T. BABAKITIS", '2024-02-14', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 4979, "EUSTACE R. BACCHUS", '2024-01-23', "Maruba", "VIP", "day 2", 12, 2, 120, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 4980, "JOHN J. BADAGLIACCA", '2024-02-03', "Maruba", "VIP", "day 3", 13, 1, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 4981, "JANE ELLEN BAESZLER", '2024-01-15', "Maruba", "Standard", "day 3", 13, 1, 200, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 4986, "ANDREW J. BAILEY", '2024-02-14', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 4988, "TATYANA BAKALINSKAYA", '2024-01-20', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 4998, "MICHAEL S. BAKSH", '2024-02-11', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5008, "SHARON M. BALKCOM", '2024-02-13', "Maruba", "Plus", "day 1", 11, 3, 70, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5012, "MICHAEL ANDREW BANE", '2024-01-28', "Maruba", "VIP", "day 2", 12, 3, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5013, "KATHERINE BANTIS", '2024-01-25', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5029, "PAUL VINCENT BARBARO", '2024-02-10', "Maruba", "VIP", "day 2", 12, 2, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5037, "COLLEEN ANN BARKOW", '2024-02-14', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5039, "DAVID MICHAEL BARKWAY", '2024-01-18', "Maruba", "Standard", "day 2", 12, 3, 180, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 5041, "EVAN JAY BARON", '2024-02-04', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5045, "RENEE BARRETT-ARJUNE", '2024-01-31', "Maruba", "VIP", "day 2", 12, 4, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5047, "SCOTT D. BART", '2024-02-03', "Maruba", "Plus", "day 1", 11, 1, 70, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5048, "CARLTON W. BARTELS", '2024-01-31', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5054, "GUY BARZVI", '2024-01-21', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 5063, "INNA B. BASINA", '2024-01-30', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5068, "ALYSIA CHRISTINE BURTON BASMAJIAN", '2024-02-10', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5067, "KENNETH WILLIAM BASNICKI", '2024-01-16', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5069, "PAUL JAMES BATTAGLIA", '2024-01-19', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5074, "W. DAVID BAUER", '2024-01-29', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5075, "IVHAN LUIS CARPIO BAUTISTA", '2024-01-29', "Maruba", "VIP", "day 3", 13, 1, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5078, "MARLYN CAPITO BAUTISTA", '2024-01-29', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 5079, "MICHELE BEALE", '2024-02-11', "Maruba", "VIP", "day 1", 11, 2, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5083, "JANE S. BEATTY", '2024-02-13', "Maruba", "Standard", "day 1", 11, 1, 160, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5088, "LAWRENCE IRA BECK", '2024-01-15', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5088, "MARIA A. BEHR", '2024-01-15', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5094, "YELENA BELILOVSKY", '2024-02-12', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5095, "NINA PATRICE BELL", '2024-02-05', "Maruba", "Standard", "day 2", 12, 3, 180, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 5097, "DEBBIE S. BELLOWS", '2024-01-20', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5102, "BRYAN CRAIG BENNETT", '2024-01-23', "Maruba", "VIP", "day 2", 12, 4, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5103, "ERIC L. BENNETT", '2024-02-02', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5104, "OLIVER BENNETT", '2024-02-07', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 5108, "MARGARET L. BENSON", '2024-01-15', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5112, "DOMINICK J. BERARDI", '2024-02-12', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5112, "ALVIN BERGSOHN", '2024-02-12', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5123, "DANIEL DAVID BERGSTEIN", '2024-01-22', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5124, "MICHAEL J. BERKELEY", '2024-01-17', "Maruba", "VIP", "day 2", 12, 2, 120, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5133, "DONNA M. BERNAERTS", '2024-02-07', "Maruba", "VIP", "day 3", 13, 2, 140, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 5150, "WILLIAM H. BERNSTEIN", '2024-02-04', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5185, "DAVID M. BERRAY", '2024-02-03', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5188, "WILLIAM REED BETHKE", '2024-01-21', "Maruba", "Plus", "day 1", 11, 2, 70, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 5192, "TIMOTHY D. BETTERLY", '2024-02-07', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5197, "EDWARD FRANK BEYEA", '2024-01-24', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5198, "ANIL TAHILRAM BHARVANEY", '2024-02-12', "Maruba", "VIP", "day 3", 13, 1, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5200, "BELLA J. BHUKHAN", '2024-01-19', "Maruba", "VIP", "day 2", 12, 3, 120, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 5201, "GARY EUGENE BIRD", '2024-01-19', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5207, "JOSHUA DAVID BIRNBAUM", '2024-02-01', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5207, "ALBERT BALEWA BLACKMAN JR.", '2024-02-01', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5207, "JANICE LEE BLANEY", '2024-02-01', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5210, "CRAIG MICHAEL BLASS", '2024-01-28', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5214, "MICHAEL ANDREW BOCCARDI", '2024-01-24', "Maruba", "VIP", "day 2", 12, 2, 120, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5213, "JOHN PAUL BOCCHI", '2024-01-24', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5216, "BRUCE DOUGLAS BOEHM", '2024-01-29', "Maruba", "Standard", "day 3", 13, 2, 200, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5221, "NICHOLAS ANDREW BOGDAN", '2024-01-27', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5228, "VINCENT M. BOLAND JR.", '2024-02-09', "Maruba", "Standard", "day 2", 12, 2, 180, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 5232, "ANDRE BONHEUR JR.", '2024-01-17', "Maruba", "Plus", "day 3", 13, 4, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5233, "COLIN ARTHUR BONNETT", '2024-02-01', "Maruba", "Standard", "day 1", 11, 2, 160, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 5233, "YVONNE LUCIA BONOMO", '2024-02-01', "Maruba", "Plus", "day 1", 11, 2, 70, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 5236, "SEAN BOOKER SR.", '2024-01-28', "Maruba", "VIP", "day 3", 13, 3, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5247, "MARTIN MICHAEL BORYCZEWSKI", '2024-01-27', "Maruba", "Standard", "day 2", 12, 2, 180, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 5250, "RICHARD EDWARD BOSCO", '2024-01-24', "Maruba", "Standard", "day 2", 12, 2, 180, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 5251, "THOMAS HAROLD BOWDEN JR.", '2024-02-05', "Maruba", "Standard", "day 2", 12, 1, 180, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 5254, "KIMBERLY S. BOWERS", '2024-02-01', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5254, "VERONIQUE NICOLE BOWERS", '2024-02-01', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5259, "SHAWN EDWARD BOWMAN JR.", '2024-02-04', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5272, "KEVIN L. BOWSER", '2024-01-29', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5273, "GENNADY BOYARSKY", '2024-02-05', "Maruba", "Standard", "day 1", 11, 1, 160, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 5274, "PAMELA BOYCE", '2024-01-25', "Maruba", "VIP", "day 2", 12, 1, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5276, "ALFRED J. BRACA", '2024-01-16', "Maruba", "VIP", "day 3", 13, 3, 140, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 5278, "SANDRA CONATY BRACE", '2024-02-02', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5286, "DAVID BRIAN BRADY", '2024-02-02', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5287, "ALEXANDER BRAGINSKY", '2024-02-01', "Maruba", "VIP", "day 3", 13, 3, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5293, "MICHELLE RENEE BRATTON", '2024-01-17', "Maruba", "Plus", "day 3", 13, 3, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5294, "PATRICE BRAUT", '2024-01-20', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5295, "LYDIA ESTELLE BRAVO", '2024-01-26', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5297, "EDWARD A. BRENNAN III", '2024-01-28', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5311, "FRANK H. BRENNAN", '2024-01-18', "Maruba", "Plus", "day 1", 11, 1, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5313, "JONATHAN ERIC BRILEY", '2024-01-30', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5317, "PAUL GARY BRISTOW", '2024-02-06', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 5318, "MARK FRANCIS BRODERICK", '2024-01-24', "Maruba", "Plus", "day 3", 13, 3, 90, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5321, "KEITH A. BROOMFIELD", '2024-02-05', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5323, "JANICE JULOISE BROWN", '2024-01-31', "Maruba", "Plus", "day 2", 12, 4, 80, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5326, "LLOYD STANFORD BROWN", '2024-02-01', "Maruba", "Plus", "day 3", 13, 2, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5328, "RICHARD GEORGE BRUEHERT", '2024-02-05', "Maruba", "Plus", "day 1", 11, 2, 70, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5329, "BRANDON J. BUCHANAN", '2024-01-29', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5330, "DENNIS BUCKLEY", '2024-01-23', "Maruba", "Standard", "day 1", 11, 3, 160, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 5332, "PATRICK JOSEPH BUHSE", '2024-01-21', "Maruba", "Standard", "day 1", 11, 4, 160, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5339, "JOHN EDWARD BULAGA JR.", '2024-01-19', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 5347, "STEPHEN BRUCE BUNIN", '2024-01-17', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5348, "MATTHEW J. BURKE", '2024-02-01', "Maruba", "VIP", "day 2", 12, 2, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5355, "THOMAS DANIEL BURKE", '2024-02-05', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5359, "KEITH JAMES BURNS", '2024-02-06', "Maruba", "Plus", "day 1", 11, 3, 70, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 5360, "MILTON G. BUSTILLO", '2024-02-07', "Maruba", "VIP", "day 3", 13, 3, 140, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 5361, "JESUS NEPTALI CABEZAS", '2024-02-13', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5363, "LILLIAN CACERES", '2024-02-05', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5364, "BRIAN JOSEPH CACHIA", '2024-02-04', "Maruba", "VIP", "day 2", 12, 2, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5374, "RICHARD MICHAEL CAGGIANO", '2024-01-19', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5376, "CECILE MARELLA CAGUICLA", '2024-02-14', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5378, "MICHAEL JOHN CAHILL", '2024-02-02', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5378, "SCOTT WALTER CAHILL", '2024-02-02', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5381, "THOMAS JOSEPH CAHILL", '2024-02-05', "Maruba", "Standard", "day 1", 11, 1, 160, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5383, "JOSEPH M. CALANDRILLO", '2024-02-07', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 5388, "PHILIP V. CALCAGNO", '2024-01-19', "Maruba", "Plus", "day 1", 11, 3, 70, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5393, "KENNETH MARCUS CALDWELL", '2024-02-02', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5395, "DOMINICK E. CALIA", '2024-01-31', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 5396, "FELIX BOBBY CALIXTE", '2024-01-16', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5406, "GINO LUIGI CALVI", '2024-02-04', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 5427, "GEOFFREY THOMAS CAMPBELL", '2024-02-12', "Maruba", "Standard", "day 1", 11, 1, 160, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5434, "SANDRA PATRICIA CAMPBELL", '2024-01-28', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5436, "JOHN A. CANDELA", '2024-02-04', "Maruba", "Standard", "day 1", 11, 3, 160, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5435, "VINCENT A. CANGELOSI", '2024-02-02', "Maruba", "Plus", "day 3", 13, 3, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5437, "STEPHEN J. CANGIALOSI", '2024-01-29', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5437, "LISA BELLA CANNAVA", '2024-01-29', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5442, "MICHAEL R. CANTY", '2024-01-26', "Maruba", "VIP", "day 3", 13, 3, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5442, "LOUIS ANTHONY CAPORICCI", '2024-01-26', "Maruba", "VIP", "day 2", 12, 3, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5463, "JONATHAN NEFF CAPPELLO", '2024-01-15', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5466, "JAMES CHRISTOPHER CAPPERS", '2024-02-03', "Maruba", "Standard", "day 2", 12, 4, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5474, "RICHARD MICHAEL CAPRONI", '2024-01-21', "Maruba", "Standard", "day 3", 13, 3, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5477, "JOSE MANUEL CARDONA", '2024-01-31', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5484, "EDWARD CARLINO", '2024-01-18', "Maruba", "VIP", "day 1", 11, 1, 100, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 5492, "ROSEMARIE C. CARLSON", '2024-02-04', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 5493, "MARK STEPHEN CARNEY", '2024-01-15', "Maruba", "Plus", "day 2", 12, 1, 80, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5494, "JOYCE ANN CARPENETO", '2024-01-29', "Maruba", "Plus", "day 2", 12, 3, 80, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5500, "JEREMY CAZ CARRINGTON", '2024-02-09', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 5501, "JAMES JOSEPH CARSON JR.", '2024-01-29', "Maruba", "Plus", "day 1", 11, 1, 70, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5503, "VIVIAN CASALDUC", '2024-02-10', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 5504, "JOHN FRANCIS CASAZZA", '2024-02-10', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5509, "WILLIAM OTTO CASPAR", '2024-02-10', "Maruba", "Standard", "day 2", 12, 2, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5512, "ARCELIA CASTILLO", '2024-01-28', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5515, "LEONARD M. CASTRIANNO", '2024-02-11', "Maruba", "Plus", "day 2", 12, 2, 80, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5522, "JOSE RAMON CASTRO", '2024-02-01', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 5537, "RICHARD G. CATARELLI", '2024-01-15', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5542, "CHRISTOPHER SEAN CATON", '2024-02-12', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 5543, "ROBERT JOHN CAUFIELD", '2024-01-22', "Maruba", "Standard", "day 3", 13, 1, 200, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 5544, "MARY TERESA CAULFIELD", '2024-02-05', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 5545, "JASON DAVID CAYNE", '2024-02-14', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5551, "MARCIA G. CECIL-CARTER", '2024-02-02', "Maruba", "VIP", "day 2", 12, 3, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5553, "JASON MICHAEL CEFALU", '2024-01-25', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5559, "THOMAS JOSEPH CELIC", '2024-01-18', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 5562, "ANA MERCEDES CENTENO", '2024-01-16', "Maruba", "Standard", "day 2", 12, 2, 180, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 5563, "WILLIAM A. CHALCOFF", '2024-02-01', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 5567, "CHARLES LAWRENCE CHAN", '2024-01-23', "Maruba", "Standard", "day 3", 13, 1, 200, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5587, "MARK LAWRENCE CHARETTE", '2024-01-27', "Maruba", "VIP", "day 3", 13, 1, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5593, "GREGORIO MANUEL CHAVEZ", '2024-01-15', "Maruba", "Standard", "day 2", 12, 3, 180, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 5606, "STEPHEN PATRICK CHERRY", '2024-02-02', "Maruba", "VIP", "day 3", 13, 1, 140, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 5609, "NESTOR JULIO CHEVALIER JR.", '2024-02-07', "Maruba", "VIP", "day 3", 13, 4, 140, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5610, "SWEDE JOSEPH CHEVALIER", '2024-01-31', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5613, "ALEXANDER H. CHIANG", '2024-02-11', "Maruba", "Plus", "day 3", 13, 2, 90, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5613, "DOROTHY J. CHIARCHIARO", '2024-02-11', "Maruba", "Standard", "day 3", 13, 2, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5620, "LUIS ALFONSO CHIMBO", '2024-02-13', "Maruba", "VIP", "day 2", 12, 4, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5620, "EDDIE WING-WAI CHING", '2024-02-13', "Maruba", "VIP", "day 1", 11, 4, 100, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5621, "PETER A. CHIRCHIRILLO", '2024-02-13', "Maruba", "Plus", "day 1", 11, 1, 70, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5625, "CATHERINE ELLEN CHIRLS", '2024-02-13', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5626, "KYUNG HEE CASEY CHO", '2024-01-22', "Maruba", "Standard", "day 3", 13, 2, 200, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5629, "ABUL K. CHOWDHURY", '2024-02-06', "Maruba", "VIP", "day 2", 12, 2, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5630, "MOHAMMAD SALAHUDDIN CHOWDHURY", '2024-01-26', "Maruba", "Plus", "day 3", 13, 3, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5636, "PAMELA CHU", '2024-01-20', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5639, "CHRISTOPHER CIAFARDINI", '2024-02-02', "Maruba", "Standard", "day 2", 12, 4, 180, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5640, "ALEX F. CICCONE", '2024-01-31', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5642, "FRANCES ANN CILENTE", '2024-02-04', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5643, "ELAINE CILLO", '2024-01-22', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5644, "PATRICIA ANN CIMAROLI MASSARI", '2024-01-27', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5654, "EDNA CINTRON", '2024-01-21', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5655, "NESTOR ANDRE CINTRON III", '2024-01-29', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5667, "JUAN PABLO CISNEROS", '2024-02-07', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5671, "GREGORY ALAN CLARK", '2024-01-30', "Maruba", "Plus", "day 3", 13, 1, 90, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5693, "MANNIE LEROY CLARK", '2024-01-16', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 5696, "DONNA MARIE CLARKE", '2024-02-10', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 5702, "SURIA RACHEL EMMA CLARKE", '2024-01-31', "Maruba", "VIP", "day 1", 11, 4, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5708, "JAMES D. CLEERE", '2024-02-02', "Maruba", "Standard", "day 3", 13, 1, 200, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5712, "GEOFFREY W. CLOUD", '2024-02-06', "Maruba", "VIP", "day 2", 12, 3, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5718, "SUSAN MARIE CLYNE", '2024-02-10', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5721, "JEFFREY ALAN COALE", '2024-02-11', "Maruba", "Standard", "day 1", 11, 3, 160, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5739, "PATRICIA A. CODY", '2024-01-17', "Maruba", "VIP", "day 1", 11, 2, 100, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 5746, "DANIEL MICHAEL COFFEY", '2024-02-06', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5753, "JASON MATTHEW COFFEY", '2024-01-21', "Maruba", "Plus", "day 3", 13, 3, 90, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5759, "KEVIN S. COHEN", '2024-02-01', "Maruba", "VIP", "day 3", 13, 3, 140, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5760, "ANTHONY JOSEPH COLADONATO", '2024-01-19', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5767, "MARK JOSEPH COLAIO", '2024-01-28', "Maruba", "Standard", "day 2", 12, 1, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5780, "STEPHEN J. COLAIO", '2024-01-30', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5788, "CHRISTOPHER MICHAEL COLASANTI", '2024-01-30', "Maruba", "VIP", "day 2", 12, 2, 120, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5806, "MICHEL P. COLBERT", '2024-01-16', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5806, "KEITH E. COLEMAN", '2024-01-16', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5811, "SCOTT THOMAS COLEMAN", '2024-01-30', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 5813, "LIAM JOSEPH COLHOUN", '2024-02-14', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5814, "MICHAEL L. COLLINS", '2024-02-03', "Maruba", "Plus", "day 1", 11, 3, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5819, "JOSEPH KENT COLLISON", '2024-01-26', "Maruba", "Plus", "day 1", 11, 2, 70, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5818, "PATRICIA MALIA COLODNER", '2024-02-09', "Maruba", "VIP", "day 1", 11, 1, 100, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 5825, "LINDA M. COLON", '2024-02-07', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5827, "RONALD EDWARD COMER", '2024-02-03', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5832, "JAIME CONCEPCION", '2024-02-10', "Maruba", "VIP", "day 3", 13, 4, 140, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 5834, "SUSAN P. CONLON", '2024-01-24', "Maruba", "Plus", "day 1", 11, 4, 70, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 5836, "MARGARET MARY CONNER", '2024-01-27', "Maruba", "Standard", "day 1", 11, 1, 160, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5839, "JONATHAN M. CONNORS", '2024-01-23', "Maruba", "Standard", "day 3", 13, 4, 200, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 5841, "KEVIN F. CONROY", '2024-02-11', "Maruba", "Plus", "day 1", 11, 1, 70, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 5847, "BRENDA E. CONWAY", '2024-01-18', "Maruba", "Plus", "day 3", 13, 1, 90, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 5849, "DENNIS MICHAEL COOK", '2024-01-28', "Maruba", "VIP", "day 1", 11, 3, 100, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5852, "HELEN D. COOK", '2024-01-31', "Maruba", "Standard", "day 2", 12, 4, 180, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 5859, "JOSEPH JOHN COPPO JR.", '2024-01-31', "Maruba", "VIP", "day 2", 12, 2, 120, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 5861, "GERARD J. COPPOLA", '2024-02-12', "Maruba", "Plus", "day 3", 13, 1, 90, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5861, "JOSEPH ALBERT CORBETT", '2024-02-12', "Maruba", "VIP", "day 2", 12, 1, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5862, "ALEJANDRO CORDERO", '2024-01-16', "Maruba", "Plus", "day 2", 12, 3, 80, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5863, "DANNY A. CORREA-GUTIERREZ", '2024-01-16', "Maruba", "Standard", "day 3", 13, 4, 200, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5867, "DOLORES MARIE COSTA", '2024-01-22', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5871, "DIGNA ALEXANDRA COSTANZA", '2024-02-14', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5873, "CHARLES GREGORY COSTELLO JR.", '2024-01-20', "Maruba", "VIP", "day 2", 12, 3, 120, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 5875, "MICHAEL S. COSTELLO", '2024-02-11', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 5876, "CONROD KOFI COTTOY SR.", '2024-02-03', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5877, "TIMOTHY J. COUGHLIN", '2024-01-25', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5877, "ANDRE COLIN COX", '2024-01-25', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5879, "MICHELE COYLE-EULAU", '2024-01-16', "Maruba", "Standard", "day 3", 13, 2, 200, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 5885, "DENISE ELIZABETH CRANT", '2024-02-06', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5890, "JAMES LESLIE CRAWFORD JR.", '2024-02-09', "Maruba", "Plus", "day 3", 13, 2, 90, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5901, "JOANNE MARY CREGAN", '2024-01-24', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 5905, "LUCIA CRIFASI", '2024-02-13', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5912, "DANIEL HAL CRISMAN", '2024-02-01', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 5916, "ROBERT L. CRUIKSHANK", '2024-01-18', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5931, "JOHN ROBERT CRUZ", '2024-01-15', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5933, "RICHARD JOSEPH CUDINA", '2024-02-13', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5937, "NEIL JAMES CUDMORE", '2024-02-05', "Maruba", "Standard", "day 1", 11, 1, 160, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 5943, "JOAN CULLINAN", '2024-01-19', "Maruba", "Plus", "day 3", 13, 1, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5945, "BRIAN THOMAS CUMMINS", '2024-01-20', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 5952, "LAURENCE DAMIAN CURIA", '2024-02-07', "Maruba", "VIP", "day 1", 11, 1, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5956, "BEVERLY L. CURRY", '2024-01-18', "Maruba", "Standard", "day 1", 11, 1, 160, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 5983, "GAVIN CUSHNY", '2024-01-24', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 5990, "VINCENT GERARD DAMADEO", '2024-02-09', "Maruba", "Plus", "day 3", 13, 1, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5992, "JACK L. DAMBROSI JR.", '2024-01-25', "Maruba", "VIP", "day 3", 13, 4, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 5995, "MARY DANTONIO", '2024-01-30', "Maruba", "Standard", "day 1", 11, 2, 160, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 5995, "MICHAEL JUDE DESPOSITO", '2024-01-30', "Maruba", "Plus", "day 3", 13, 2, 90, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 5996, "CALEB ARRON DACK", '2024-02-06', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 6015, "THOMAS A. DAMASKINOS", '2024-01-23', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 6025, "JEANNINE DAMIANI-JONES", '2024-01-17', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 6026, "MANUEL JOÃO DAMOTA", '2024-01-25', "Maruba", "VIP", "day 3", 13, 2, 140, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 6029, "DWIGHT DONALD DARCY", '2024-01-29', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 6031, "ELIZABETH ANN DARLING", '2024-01-31', "Maruba", "VIP", "day 2", 12, 2, 120, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 6054, "ANNETTE ANDREA DATARAM", '2024-02-11', "Maruba", "Standard", "day 3", 13, 3, 200, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6058, "MICHAEL ALLEN DAVIDSON", '2024-01-22', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6060, "NIURKA DAVILA", '2024-01-15', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6072, "WAYNE TERRIAL DAVIS", '2024-02-01', "Maruba", "Standard", "day 1", 11, 3, 160, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 6081, "ANTHONY RICHARD DAWSON", '2024-02-11', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6084, "AZUCENA MARIA DE LA TORRE", '2024-01-18', "Maruba", "VIP", "day 1", 11, 1, 100, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 6096, "JOSE NICOLAS DE PENA", '2024-02-14', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 6117, "MELANIE LOUISE DE VERE", '2024-02-09', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6118, "WILLIAM THOMAS DEAN", '2024-01-31', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 6124, "TARA E. DEBEK", '2024-01-31', "Maruba", "Plus", "day 3", 13, 4, 90, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 6142, "ANNA M. DEBIN", '2024-02-05', "Maruba", "Plus", "day 3", 13, 2, 90, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 6142, "JAMES V. DEBLASE JR.", '2024-02-05', "Maruba", "Standard", "day 2", 12, 2, 180, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 6149, "PAUL DECOLA", '2024-02-06', "Maruba", "Plus", "day 2", 12, 2, 80, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 6161, "SIMON MARASH DEDVUKAJ", '2024-01-24', "Maruba", "VIP", "day 2", 12, 3, 120, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 6165, "JASON CHRISTOPHER DEFAZIO", '2024-02-14', "Maruba", "Plus", "day 2", 12, 4, 80, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 6187, "MONIQUE EFFIE DEJESUS", '2024-01-18', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6202, "VITO JOSEPH DELEO", '2024-02-09', "Maruba", "Standard", "day 2", 12, 4, 180, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 6209, "DANIELLE ANNE DELIE", '2024-01-31', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6218, "JOSEPH A. DELLA PIETRA", '2024-01-24', "Maruba", "Plus", "day 2", 12, 1, 80, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 6221, "PALMINA DELLIGATTI", '2024-01-30', "Maruba", "Plus", "day 3", 13, 2, 90, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 6221, "FRANCIS DEMING", '2024-01-30', "Maruba", "Plus", "day 2", 12, 2, 80, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 6234, "KEVIN DENNIS", '2024-01-19', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 6249, "THOMAS FRANCIS DENNIS SR.", '2024-01-24', "Maruba", "Standard", "day 1", 11, 3, 160, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 6260, "JEAN C. DEPALMA", '2024-02-06', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 6265, "ROBERT JOHN DERANEY", '2024-02-02', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6276, "MICHAEL DERIENZO", '2024-02-03', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 6283, "JEMAL LEGESSE DESANTIS", '2024-01-25', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 6283, "CHRISTIAN LOUIS DESIMONE", '2024-01-25', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 6283, "EDWARD DESIMONE III", '2024-01-25', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 6283, "CINDY ANN DEUEL", '2024-01-25', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 6283, "JERRY DEVITO", '2024-01-25', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 6286, "ROBERT P. DEVITT JR.", '2024-02-09', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6296, "PATRICIA FLORENCE DI CHIARO", '2024-02-14', "Maruba", "VIP", "day 2", 12, 4, 120, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 6306, "MICHAEL LOUIS DIAGOSTINO", '2024-02-11', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6309, "MATTHEW DIAZ", '2024-02-05', "Maruba", "Standard", "day 3", 13, 1, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 6311, "NANCY DIAZ", '2024-02-10', "Maruba", "Plus", "day 3", 13, 1, 90, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 6311, "OBDULIO RUIZ DIAZ", '2024-02-10', "Maruba", "Standard", "day 1", 11, 1, 160, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 6425, "MICHAEL A. DIAZ-PIEDRA III", '2024-02-03', "Maruba", "Standard", "day 2", 12, 2, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6470, "JOSEPH DERMOT DICKEY JR.", '2024-02-11', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 6514, "LAWRENCE PATRICK DICKINSON", '2024-02-06', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6521, "JOHN DIFATO", '2024-01-28', "Maruba", "Standard", "day 1", 11, 2, 160, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6540, "VINCENT FRANCIS DIFAZIO", '2024-02-10', "Maruba", "Standard", "day 3", 13, 1, 200, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 6550, "CARL ANTHONY DIFRANCO", '2024-02-10', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 6574, "DONALD JOSEPH DIFRANCO", '2024-02-11', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 6636, "STEPHEN PATRICK DIMINO", '2024-01-24', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6645, "WILLIAM JOHN DIMMLING", '2024-01-29', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6644, "CHRISTOPHER MORE DINCUFF", '2024-02-05', "Maruba", "VIP", "day 1", 11, 3, 100, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 6653, "JEFFREY MARK DINGLE", '2024-01-22', "Maruba", "Plus", "day 3", 13, 4, 90, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 6733, "RENA SAM DINNOO", '2024-01-27', "Maruba", "Plus", "day 3", 13, 3, 90, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 6733, "ANTHONY DIONISIO", '2024-01-27', "Maruba", "VIP", "day 1", 11, 3, 100, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 6780, "DOUGLAS FRANK DISTEFANO", '2024-02-11', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 6821, "RAMZI A. DOANY", '2024-02-08', "Maruba", "Plus", "day 2", 12, 1, 80, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6829, "BRENDAN DOLAN", '2024-01-30', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 6836, "NEIL MATTHEW DOLLARD", '2024-01-23', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 6841, "CARLOS DOMINGUEZ", '2024-01-31', "Maruba", "Standard", "day 2", 12, 1, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 6847, "THOMAS DOWD", '2024-02-09', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6895, "JOSEPH MICHAEL DOYLE", '2024-01-26', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 6905, "MIRNA A. DUARTE", '2024-02-07', "Maruba", "VIP", "day 1", 11, 1, 100, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6933, "LUKE A. DUDEK", '2024-02-12', "Maruba", "Standard", "day 1", 11, 4, 160, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 6931, "THOMAS W. DUFFY", '2024-01-15', "Maruba", "Standard", "day 3", 13, 4, 200, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 6943, "ANTOINETTE DUGER", '2024-02-02', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6945, "JACKIE SAYEGH DUGGAN", '2024-02-01', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6963, "CHRISTOPHER JOSEPH DUNNE", '2024-02-02', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6984, "PATRICK THOMAS DWYER", '2024-01-21', "Maruba", "Standard", "day 2", 12, 2, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 6998, "JOSEPH ANTHONY EACOBACCI", '2024-02-06', "Maruba", "VIP", "day 1", 11, 1, 100, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 7013, "ROBERT DOUGLAS EATON", '2024-02-11', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 7019, "PAUL ROBERT ECKNA", '2024-01-29', "Maruba", "Plus", "day 1", 11, 2, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 7058, "DENNIS MICHAEL EDWARDS", '2024-01-24', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 7065, "LISA ERIN EGAN", '2024-01-25', "Maruba", "VIP", "day 2", 12, 4, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 7068, "SAMANTHA MARTIN EGAN", '2024-02-10', "Maruba", "Standard", "day 2", 12, 2, 180, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 7070, "CAROLE EGGERT", '2024-01-25', "Maruba", "Plus", "day 3", 13, 3, 90, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 7090, "JOHN ERNST EICHLER", '2024-01-20', "Maruba", "VIP", "day 2", 12, 4, 120, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 7110, "DAPHNE FERLINDA ELDER", '2024-01-25', "Maruba", "VIP", "day 2", 12, 1, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 7111, "VALERIE SILVER ELLIS", '2024-01-20', "Maruba", "VIP", "day 1", 11, 3, 100, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 7114, "ALBERT ALFY WILLIAM ELMARRY", '2024-01-28', "Maruba", "VIP", "day 3", 13, 3, 140, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 7135, "DORIS SUK-YUEN ENG", '2024-01-20', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 7169, "CHRISTOPHER EPPS", '2024-02-06', "Maruba", "VIP", "day 3", 13, 2, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 7180, "ERWIN L. ERKER", '2024-02-12', "Maruba", "Plus", "day 3", 13, 3, 90, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 7184, "WILLIAM JOHN ERWIN", '2024-01-25', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 7217, "SARAH ALI ESCARCEGA", '2024-01-21', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 7268, "FANNY ESPINOZA", '2024-01-17', "Maruba", "Standard", "day 3", 13, 1, 200, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 7301, "BILLY SCOOP ESPOSITO", '2024-01-28', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 7308, "BRIDGET ANN ESPOSITO", '2024-01-29', "Maruba", "Plus", "day 2", 12, 3, 80, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 7308, "SADIE ETTE", '2024-01-29', "Maruba", "Standard", "day 3", 13, 3, 200, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 7311, "BARBARA G. ETZOLD", '2024-02-14', "Maruba", "Standard", "day 1", 11, 4, 160, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 7380, "CATHERINE K. FAGAN", '2024-02-10', "Maruba", "Standard", "day 3", 13, 2, 200, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 7386, "IVAN KYRILLOS FAIRBANKS-BARBOSA", '2024-01-29', "Maruba", "Plus", "day 3", 13, 4, 90, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 7403, "SANDRA FAJARDO-SMITH", '2024-01-31', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 7421, "WILLIAM F. FALLON", '2024-02-03', "Maruba", "Standard", "day 1", 11, 2, 160, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 7436, "WILLIAM LAWRENCE FALLON JR.", '2024-01-30', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 7435, "ANTHONY J. FALLONE JR.", '2024-01-31', "Maruba", "Standard", "day 1", 11, 3, 160, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 7442, "DOLORES BRIGITTE FANELLI", '2024-01-31', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 7478, "KATHLEEN ANNE FARAGHER", '2024-02-12', "Maruba", "Plus", "day 2", 12, 1, 80, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 7478, "NANCY C. DOLOSZYCKI FARLEY", '2024-02-12', "Maruba", "Standard", "day 2", 12, 1, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 7500, "ELIZABETH ANN FARMER", '2024-01-18', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 7526, "DOUGLAS JON FARNUM", '2024-02-07', "Maruba", "Standard", "day 2", 12, 4, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 7527, "JOHN GERARD FARRELL", '2024-01-29', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 7533, "THOMAS PATRICK FARRELLY", '2024-01-27', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 7535, "CHRISTOPHER EDWARD FAUGHNAN", '2024-01-27', "Maruba", "VIP", "day 3", 13, 4, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 7593, "SHANNON MARIE FAVA", '2024-01-24', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 7620, "BERNARD D. FAVUZZA", '2024-02-07', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 7633, "FRANCIS JUDE FEELY", '2024-01-24', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 7709, "GARTH ERIN FEENEY", '2024-02-13', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 7746, "SEAN BERNARD FEGAN", '2024-02-06', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 7762, "ROSA MARIA FELICIANO", '2024-02-13', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 7780, "EDWARD THOMAS FERGUS JR.", '2024-01-15', "Maruba", "Standard", "day 2", 12, 3, 180, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 7803, "HENRY FERNANDEZ", '2024-02-07', "Maruba", "VIP", "day 1", 11, 4, 100, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 7799, "JUDY HAZEL SANTILLAN FERNANDEZ", '2024-02-12', "Maruba", "Plus", "day 1", 11, 3, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 7815, "ELISA GISELLE FERRAINA", '2024-02-09', "Maruba", "VIP", "day 1", 11, 2, 100, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 7834, "ANNE MARIE SALLERIN FERREIRA", '2024-02-10', "Maruba", "VIP", "day 2", 12, 1, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 7846, "DAVID FRANCIS FERRUGIO", '2024-02-14', "Maruba", "VIP", "day 1", 11, 3, 100, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 7851, "LOUIS V. FERSINI JR.", '2024-01-29', "Maruba", "Standard", "day 2", 12, 1, 180, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 7853, "KRISTEN NICOLE FIEDEL", '2024-02-06', "Maruba", "VIP", "day 2", 12, 3, 120, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 7862, "MICHAEL BRADLEY FINNEGAN", '2024-01-22', "Maruba", "Plus", "day 1", 11, 2, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 7867, "TIMOTHY J. FINNERTY", '2024-01-26', "Maruba", "VIP", "day 1", 11, 2, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 8019, "STEPHEN J. FIORELLI", '2024-02-13', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 8032, "PAUL M. FIORI", '2024-01-21', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 8045, "JOHN B. FIORITO", '2024-02-13', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 8097, "ANDREW FISHER", '2024-02-01', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 8100, "JOHN ROGER FISHER", '2024-01-29', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 8221, "SALVATORE FIUMEFREDDO", '2024-01-31', "Maruba", "VIP", "day 1", 11, 4, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 8239, "CARL M. FLICKINGER", '2024-02-12', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 8245, "STEPHEN MARK FOGEL", '2024-01-19', "Maruba", "Plus", "day 1", 11, 1, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 8258, "DELROSE E. FORBES CHEATHAM", '2024-01-20', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 8258, "CHRISTOPHER HUGH FORSYTHE", '2024-01-20', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 8271, "CLAUDIA ALICIA FOSTER", '2024-02-05', "Maruba", "VIP", "day 1", 11, 1, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 8306, "VIRGINIA ELIZABETH FOX", '2024-01-25', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 8310, "PAULINE FRANCIS", '2024-01-29', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 8337, "VIRGIN LUCY FRANCIS", '2024-01-15', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 8383, "MORTON H. FRANK", '2024-02-06', "Maruba", "Standard", "day 1", 11, 3, 160, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 8441, "PETER CHRISTOPHER FRANK", '2024-01-23', "Maruba", "Plus", "day 1", 11, 2, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 8461, "ARLENE EVA FRIED", '2024-02-02', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 8515, "ANDREW KEITH FRIEDMAN", '2024-01-16', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 8538, "CLEMENT A. FUMANDO", '2024-02-13', "Maruba", "Standard", "day 3", 13, 1, 200, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 8540, "STEVEN ELLIOT FURMAN", '2024-01-16', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 8548, "PAUL JAMES FURMATO", '2024-01-18', "Maruba", "Standard", "day 2", 12, 1, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 8589, "FREDRIC NEAL GABLER", '2024-02-01', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 8636, "JAMES ANDREW GADIEL", '2024-02-02', "Maruba", "Standard", "day 3", 13, 1, 200, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 8677, "DEANNA LYNN GALANTE", '2024-01-29', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 8692, "GRACE CATHERINE GALANTE", '2024-01-15', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 8708, "ANTHONY EDWARD GALLAGHER", '2024-02-09', "Maruba", "Plus", "day 1", 11, 1, 70, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 8739, "DANIEL JAMES GALLAGHER", '2024-01-22', "Maruba", "Plus", "day 3", 13, 4, 90, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 8754, "JOHN PATRICK GALLAGHER", '2024-01-27', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 8934, "LOURDES J. GALLETTI", '2024-02-08', "Maruba", "Plus", "day 3", 13, 4, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9006, "CONO E. GALLO", '2024-01-26', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 9079, "VINCENT GALLUCCI", '2024-02-01', "Maruba", "Standard", "day 1", 11, 4, 160, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 9085, "THOMAS E. GALVIN", '2024-01-29', "Maruba", "Standard", "day 2", 12, 3, 180, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 9085, "GIOVANNA GALLETTA GAMBALE", '2024-01-29', "Maruba", "VIP", "day 1", 11, 3, 100, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 9102, "MICHAEL GANN", '2024-02-06', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 9116, "CESAR R. GARCIA", '2024-02-06', "Maruba", "Plus", "day 1", 11, 1, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9126, "DAVID GARCIA", '2024-01-18', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 9138, "JUAN GARCIA", '2024-01-28', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 9163, "MARLYN DEL CARMEN GARCIA", '2024-02-10', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9169, "DOUGLAS BENJAMIN GARDNER", '2024-01-30', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9177, "HARVEY JOSEPH GARDNER III", '2024-02-06', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 9181, "JEFFREY BRIAN GARDNER", '2024-01-21', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9208, "WILLIAM ARTHUR GARDNER", '2024-02-13', "Maruba", "Plus", "day 1", 11, 4, 70, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 9208, "FRANK GARFI", '2024-02-13', "Maruba", "Standard", "day 2", 12, 4, 180, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 9215, "ROCCO NINO GARGANO", '2024-01-23', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 9234, "JAMES M. GARTENBERG", '2024-02-09', "Maruba", "Plus", "day 1", 11, 3, 70, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9276, "DONALD RICHARD GAVAGAN JR.", '2024-01-26', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9291, "TERENCE D. GAZZANI", '2024-02-09', "Maruba", "VIP", "day 1", 11, 3, 100, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 9312, "PAUL HAMILTON GEIER", '2024-02-11', "Maruba", "VIP", "day 2", 12, 4, 120, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 9316, "PETER GERARD GELINAS", '2024-01-15', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 9339, "STEVEN PAUL GELLER", '2024-02-13', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 9347, "PETER VICTOR GENCO JR.", '2024-01-21', "Maruba", "Standard", "day 1", 11, 3, 160, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9350, "STEVEN GREGORY GENOVESE", '2024-01-22', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9352, "SUZANNE GERATY", '2024-02-02', "Maruba", "Plus", "day 1", 11, 3, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9357, "RALPH GERHARDT", '2024-02-03', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 9367, "ROBERT GERLICH", '2024-02-13', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9370, "MARINA ROMANOVNA GERTSBERG", '2024-02-07', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9405, "JAMES G. GEYER", '2024-02-09', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9408, "JOSEPH M. GIACCONE", '2024-02-05', "Maruba", "Plus", "day 1", 11, 4, 70, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 9425, "CRAIG NEIL GIBSON", '2024-01-17', "Maruba", "Standard", "day 1", 11, 3, 160, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 9434, "ANDREW CLIVE GILBERT", '2024-02-05', "Maruba", "Plus", "day 3", 13, 3, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9440, "TIMOTHY PAUL GILBERT", '2024-01-28', "Maruba", "VIP", "day 1", 11, 3, 100, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9476, "MARK Y. GILLES", '2024-02-05', "Maruba", "VIP", "day 1", 11, 3, 100, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 9482, "RONALD LAWRENCE GILLIGAN", '2024-02-05', "Maruba", "VIP", "day 2", 12, 4, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9491, "LAURA GILLY", '2024-02-01', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9503, "STEVEN A. GIORGETTI", '2024-02-10', "Maruba", "VIP", "day 2", 12, 1, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9527, "MARTIN GIOVINAZZO", '2024-02-13', "Maruba", "Standard", "day 2", 12, 4, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9532, "SALVATORE GITTO", '2024-02-11', "Maruba", "Standard", "day 1", 11, 1, 160, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 9545, "CYNTHIA GIUGLIANO", '2024-01-18', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9552, "HARRY GLENN", '2024-01-16', "Maruba", "Standard", "day 3", 13, 2, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9588, "BARRY H. GLICK", '2024-02-07', "Maruba", "VIP", "day 3", 13, 2, 140, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 9599, "STEVEN GLICK", '2024-01-20', "Maruba", "Standard", "day 2", 12, 4, 180, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 9606, "JOHN T. GNAZZO", '2024-01-28', "Maruba", "VIP", "day 3", 13, 3, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9607, "MICHAEL GOGLIORMELLA", '2024-01-30', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 9608, "JEFFREY G. GOLDFLAM", '2024-01-31', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9617, "MONICA GOLDSTEIN", '2024-01-22', "Maruba", "Standard", "day 2", 12, 2, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9617, "STEVEN IAN GOLDSTEIN", '2024-01-22', "Maruba", "VIP", "day 3", 13, 2, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9618, "ANDREW H. GOLKIN", '2024-02-10', "Maruba", "VIP", "day 2", 12, 3, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9618, "ENRIQUE ANTONIO GOMEZ", '2024-02-10', "Maruba", "Plus", "day 1", 11, 3, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9620, "JOSE BIENVENIDO GOMEZ", '2024-01-27', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 9633, "WILDER ALFREDO GOMEZ", '2024-02-05', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9642, "ROSA J. GONZALEZ", '2024-02-07', "Maruba", "Plus", "day 1", 11, 3, 70, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 9640, "CALVIN JOSEPH GOODING", '2024-01-18', "Maruba", "Plus", "day 1", 11, 2, 70, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 9648, "KIRAN KUMAR REDDY GOPU", '2024-01-30', "Maruba", "Plus", "day 1", 11, 2, 70, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 9651, "CATHERINE C. GORAYEB", '2024-02-13', "Maruba", "Standard", "day 2", 12, 3, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9653, "KERENE GORDON", '2024-02-07', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 9659, "MICHAEL EDWARD GOULD", '2024-01-24', "Maruba", "VIP", "day 1", 11, 2, 100, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 9665, "JON RICHARD GRABOWSKI", '2024-02-03', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9671, "CHRISTOPHER MICHAEL GRADY", '2024-02-06', "Maruba", "VIP", "day 2", 12, 1, 120, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9677, "EDWIN J. GRAF III", '2024-01-15', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 9685, "ELVIRA GRANITTO", '2024-01-21', "Maruba", "Plus", "day 3", 13, 2, 90, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 9698, "WINSTON ARTHUR GRANT", '2024-01-26', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9699, "CHRISTOPHER S. GRAY", '2024-01-31', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9702, "TARA MCCLOUD GRAY", '2024-01-27', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9703, "JOHN M. GRAZIOSO", '2024-02-03', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9703, "TIMOTHY GEORGE GRAZIOSO", '2024-02-03', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9712, "WADE B. GREEN", '2024-02-11', "Maruba", "Standard", "day 3", 13, 2, 200, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 9715, "ELAINE MYRA GREENBERG", '2024-01-27', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 9722, "GAYLE R. GREENE", '2024-01-27', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 9728, "JAMES ARTHUR GREENLEAF JR.", '2024-01-15', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9734, "ELIZABETH MARTIN GREGG", '2024-01-20', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 9741, "DENISE MARIE GREGORY", '2024-01-22', "Maruba", "Standard", "day 3", 13, 3, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9742, "DONALD H. GREGORY", '2024-02-11', "Maruba", "Standard", "day 1", 11, 2, 160, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9748, "PEDRO GREHAN", '2024-02-08', "Maruba", "VIP", "day 1", 11, 4, 100, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 9752, "JOHN MICHAEL GRIFFIN", '2024-01-22', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 9754, "TAWANNA SHERRY GRIFFIN", '2024-02-14', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9754, "WARREN GRIFKA", '2024-02-14', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9757, "RAMON B. GRIJALVO", '2024-02-10', "Maruba", "VIP", "day 3", 13, 1, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9764, "JOSEPH F. GRILLO", '2024-02-13', "Maruba", "Plus", "day 3", 13, 3, 90, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 9767, "DAVID JOSEPH GRIMNER", '2024-01-15', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9768, "MATTHEW JAMES GRZYMALSKI", '2024-02-09', "Maruba", "VIP", "day 1", 11, 2, 100, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9768, "LIMING GU", '2024-02-09', "Maruba", "Standard", "day 1", 11, 2, 160, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9784, "DOUGLAS BRIAN GURIAN", '2024-01-27', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9787, "GARY ROBERT HAAG", '2024-02-13', "Maruba", "Plus", "day 3", 13, 1, 90, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9789, "ANDREA LYN HABERMAN", '2024-01-20', "Maruba", "Plus", "day 1", 11, 3, 70, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9792, "BARBARA MARY HABIB", '2024-01-17', "Maruba", "Standard", "day 2", 12, 3, 180, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 9805, "PHILIP HAENTZLER", '2024-02-09', "Maruba", "Standard", "day 3", 13, 3, 200, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9817, "NEZAM A. HAFIZ", '2024-02-13', "Maruba", "Plus", "day 1", 11, 4, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9821, "STEVEN MICHAEL HAGIS", '2024-02-05', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9823, "MAILE RACHEL HALE", '2024-02-13', "Maruba", "VIP", "day 1", 11, 2, 100, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 9824, "VASWALD GEORGE HALL", '2024-01-17', "Maruba", "Standard", "day 2", 12, 3, 180, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 9826, "JAMES DOUGLAS HALVORSON", '2024-01-21', "Maruba", "Standard", "day 2", 12, 2, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9834, "FREDERIC K. HAN", '2024-02-08', "Maruba", "VIP", "day 1", 11, 2, 100, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 9839, "CHRISTOPHER JAMES HANLEY", '2024-02-01', "Maruba", "Standard", "day 2", 12, 3, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9839, "VALERIE JOAN HANNA", '2024-02-01', "Maruba", "VIP", "day 3", 13, 3, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9847, "KEVIN JAMES HANNAFORD SR.", '2024-02-09', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 9850, "MICHAEL LAWRENCE HANNAN", '2024-01-16', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 9853, "JAMES A. HARAN", '2024-02-07', "Maruba", "Plus", "day 3", 13, 1, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9858, "JEFFREY PIKE HARDY", '2024-02-03', "Maruba", "VIP", "day 2", 12, 4, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9859, "T.J. HARGRAVE", '2024-01-28', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9866, "MELISSA MARIE HARRINGTON", '2024-01-23', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9868, "AISHA ANN HARRIS", '2024-02-04', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 9871, "STEWART D. HARRIS", '2024-02-08', "Maruba", "Standard", "day 1", 11, 1, 160, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 9871, "EMERIC HARVEY", '2024-02-08', "Maruba", "Standard", "day 3", 13, 1, 200, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 9874, "JOSEPH JOHN HASSON III", '2024-02-03', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 9881, "TIMOTHY AARON HAVILAND", '2024-01-22', "Maruba", "VIP", "day 3", 13, 1, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9882, "ANTHONY MAURICE HAWKINS", '2024-01-20', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 9887, "W. WARD HAYNES", '2024-01-20', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9891, "SCOTT JORDAN HAZELCORN", '2024-01-18', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9893, "ROBERTA B. HEBER", '2024-01-25', "Maruba", "Plus", "day 1", 11, 3, 70, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9892, "CHARLES FRANCIS XAVIER HEERAN", '2024-02-13', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 9895, "H. JOSEPH HELLER JR.", '2024-01-22', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9906, "JOANN L. HELTIBRIDLE", '2024-01-16', "Maruba", "VIP", "day 1", 11, 3, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9908, "BRIAN HENNESSEY", '2024-01-15', "Maruba", "Plus", "day 2", 12, 3, 80, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 9909, "CATHERINA HENRY-ROBINSON", '2024-01-30', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9910, "JOHN CHRISTOPHER HENWOOD", '2024-02-09', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 9910, "ROBERT ALLAN HEPBURN", '2024-02-09', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 9916, "HARVEY ROBERT HERMER", '2024-02-12', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 9919, "NORBERTO HERNANDEZ", '2024-01-25', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9925, "RAUL HERNANDEZ", '2024-02-13', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 9928, "JEFFREY ALAN HERSCH", '2024-01-31', "Maruba", "Standard", "day 3", 13, 3, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9938, "ENEMENCIO DARIO HIDALGO CEDEÑO", '2024-01-17', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 9941, "CLARA VICTORINE HINDS", '2024-02-04', "Maruba", "VIP", "day 3", 13, 3, 140, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 9943, "MARK HINDY", '2024-01-16', "Maruba", "Standard", "day 3", 13, 3, 200, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 9948, "HEATHER MALIA HO", '2024-01-23', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 9953, "THOMAS ANDERSON HOBBS", '2024-01-28', "Maruba", "VIP", "day 3", 13, 4, 140, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 9955, "JAMES J. HOBIN", '2024-01-18', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 9962, "ROBERT WAYNE HOBSON III", '2024-01-27', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 9965, "DAJUAN HODGES", '2024-01-19', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 9968, "PATRICK A. HOEY", '2024-01-30', "Maruba", "Standard", "day 3", 13, 4, 200, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 9970, "MARCIA HOFFMAN", '2024-01-17', "Maruba", "Standard", "day 3", 13, 1, 200, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 9975, "STEPHEN GERARD HOFFMAN", '2024-01-24', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 9985, "FREDERICK JOSEPH HOFFMANN", '2024-02-02', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 9990, "MICHELE L. HOFFMANN", '2024-02-04', "Maruba", "VIP", "day 3", 13, 3, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 10006, "JUDITH FLORENCE HOFMILLER", '2024-02-03', "Maruba", "Plus", "day 2", 12, 2, 80, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 10013, "JOHN HOLLAND", '2024-02-03', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 10016, "JOSEPH F. HOLLAND", '2024-02-13', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 10024, "BRADLEY V. HOORN", '2024-01-21', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 10026, "JAMES P. HOPPER", '2024-02-02', "Maruba", "Standard", "day 2", 12, 4, 180, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 10032, "MONTGOMERY MCCULLOUGH HORD", '2024-01-31', "Maruba", "Standard", "day 1", 11, 1, 160, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 10034, "MICHAEL JOSEPH HORN", '2024-02-02', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 10035, "MATTHEW DOUGLAS HORNING", '2024-02-06', "Maruba", "Standard", "day 1", 11, 3, 160, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 10038, "ROBERT L. HOROHOE JR.", '2024-02-01', "Maruba", "Standard", "day 3", 13, 1, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 10043, "AARON HORWITZ", '2024-01-29', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 10049, "MICHAEL C. HOWELL", '2024-01-30', "Maruba", "Standard", "day 2", 12, 2, 180, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 10053, "STEVEN LEON HOWELL", '2024-02-13', "Maruba", "Plus", "day 2", 12, 3, 80, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 10053, "PAUL REXFORD HUGHES", '2024-02-13', "Maruba", "VIP", "day 2", 12, 3, 120, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 10055, "ROBERT T. HUGHES JR.", '2024-02-12', "Maruba", "VIP", "day 1", 11, NULL, 100, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 10057, "THOMAS F. HUGHES JR.", '2024-01-19', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 10058, "TIMOTHY ROBERT HUGHES", '2024-01-25', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 10060, "SUSAN HUIE", '2024-01-24', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 10066, "LAMAR DEMETRIUS HULSE", '2024-02-13', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 10068, "ROBERT R. HUSSA", '2024-01-25', "Maruba", "VIP", "day 1", 11, 4, 100, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 10072, "JOSEPH ANTHONY IANELLI", '2024-02-12', "Maruba", "VIP", "day 1", 11, 3, 100, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 10074, "ZUHTU IBIS", '2024-02-01', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 10081, "DANIEL ILKANAYEV", '2024-01-23', "Maruba", "Standard", "day 2", 12, 3, 180, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 10082, "ABRAHAM NETHANEL ILOWITZ", '2024-02-06', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 10082, "CHRISTOPHER NOBLE INGRASSIA", '2024-02-06', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 10090, "PAUL INNELLA", '2024-01-28', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 10089, "STEPHANIE VERONICA IRBY", '2024-02-01', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 10092, "TODD ANTIONE ISAAC", '2024-01-25', "Maruba", "Plus", "day 2", 12, 2, 80, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 10099, "ERIK HANS ISBRANDTSEN", '2024-02-07', "Maruba", "VIP", "day 3", 13, 2, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 10099, "ARAM ISKENDERIAN JR.", '2024-02-07', "Maruba", "Plus", "day 2", 12, 2, 80, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 10107, "JOHN F. ISKYAN", '2024-02-06', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 10111, "ALEKSANDR VALERYEVICH IVANTSOV", '2024-02-09', "Maruba", "VIP", "day 2", 12, 3, 120, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 10116, "VIRGINIA MAY JABLONSKI", '2024-01-21', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 10135, "BROOKE ALEXANDRA JACKMAN", '2024-01-24', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 10136, "AARON JEREMY JACOBS", '2024-02-06', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 10139, "ARIEL LOUIS JACOBS", '2024-01-30', "Maruba", "Plus", "day 3", 13, 1, 90, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 10140, "STEVEN A. JACOBSON", '2024-02-01', "Maruba", "Plus", "day 3", 13, 4, 90, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 10148, "RICKNAUTH JAGGERNAUTH", '2024-02-06', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 10149, "JAKE DENIS JAGODA", '2024-01-21', "Maruba", "Plus", "day 1", 11, 4, 70, 0.1, "pago", "cartao", 5);
+INSERT INTO vendas VALUES (participanteId, 10151, "YUDHVIR S. JAIN", '2024-02-02', "Maruba", "Standard", "day 2", 12, 1, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 10151, "MARIA JAKUBIAK", '2024-02-02', "Maruba", "Standard", "day 3", 13, 1, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 10157, "ERNEST JAMES", '2024-01-16', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 10158, "GRICELDA E. JAMES", '2024-01-23', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 10159, "MARK STEVEN JARDIM", '2024-01-21', "Maruba", "Plus", "day 2", 12, 4, 80, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 10159, "MUHAMMADOU JAWARA", '2024-01-21', "Maruba", "Standard", "day 1", 11, 4, 160, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 10162, "FRANCOIS JEAN-PIERRE", '2024-02-01', "Maruba", "Standard", "day 3", 13, 3, 200, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 10164, "MAXIMA JEAN-PIERRE", '2024-02-06', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 10172, "PAUL EDWARD JEFFERS", '2024-02-01', "Maruba", "Plus", "day 1", 11, NULL, 70, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 10172, "PREM NATH JERATH", '2024-02-01', "Maruba", "Standard", "day 3", 13, NULL, 200, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 10176, "HWEIDAR JIAN", '2024-01-18', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 10181, "ELIEZER JIMENEZ JR.", '2024-01-25', "Maruba", "VIP", "day 3", 13, 2, 140, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 10190, "LUIS JIMENEZ JR.", '2024-02-12', "Maruba", "VIP", "day 2", 12, 4, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 10188, "NICHOLAS JOHN", '2024-01-18', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 10192, "LASHAWNA JOHNSON", '2024-01-28', "Maruba", "Plus", "day 1", 11, 3, 70, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 10198, "ARTHUR JOSEPH JONES III", '2024-02-04', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 10198, "CHRISTOPHER D. JONES", '2024-02-04', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 10206, "DONALD T. JONES II", '2024-02-14', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 10208, "DONALD W. JONES", '2024-01-29', "Maruba", "Plus", "day 2", 12, 2, 80, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 10210, "MARY S. JONES", '2024-02-04', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 10211, "ROBERT THOMAS JORDAN", '2024-01-17', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "cartao", 2);
+INSERT INTO vendas VALUES (participanteId, 10224, "KAREN SUE JUDAY", '2024-02-10', "Maruba", "Standard", "day 2", 12, 3, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 10230, "SHASHIKIRAN LAKSHMIKANTHA KADABA", '2024-01-25', "Maruba", "Plus", "day 3", 13, 1, 90, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 10235, "SHARI KANDELL", '2024-01-27', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 10236, "HOWARD LEE KANE", '2024-02-07', "Maruba", "VIP", "day 2", 12, 3, 120, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 10239, "JENNIFER LYNN KANE", '2024-02-03', "Maruba", "VIP", "day 3", 13, 3, 140, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 10242, "JOON KOO KANG", '2024-02-08', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 10244, "SHELDON ROBERT KANTER", '2024-02-07', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 10247, "DEBORAH H. KAPLAN", '2024-01-31', "Maruba", "Plus", "day 2", 12, 2, 80, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 10247, "WILLIAM A. KARNES", '2024-01-31', "Maruba", "VIP", "day 2", 12, 2, 120, 0.1, "pago", "boleto", 0);
+INSERT INTO vendas VALUES (participanteId, 10262, "ANDREW K. KATES", '2024-01-22', "Maruba", "VIP", "day 2", 12, 1, 120, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 10265, "JOHN A. KATSIMATIDES", '2024-02-06', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 10269, "EDWARD T. KEANE", '2024-02-12', "Maruba", "VIP", "day 2", 12, 4, 120, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 10278, "RICHARD M. KEANE", '2024-02-10', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 10280, "LISA YVONNE KEARNEY-GRIFFIN", '2024-02-06', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 10280, "PETER R. KELLERMAN", '2024-02-06', "Maruba", "Plus", "day 2", 12, NULL, 80, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 10285, "JOSEPH P. KELLETT", '2024-01-21', "Maruba", "VIP", "day 1", 11, 3, 100, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 10292, "FREDERICK H. KELLEY III", '2024-01-21', "Maruba", "Standard", "day 2", 12, NULL, 180, 0.1, "pago", "cartao", 1);
+INSERT INTO vendas VALUES (participanteId, 10294, "JAMES JOSEPH KELLY", '2024-01-16', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 10295, "JOSEPH A. KELLY", '2024-02-09', "Maruba", "VIP", "day 3", 13, NULL, 140, 0.1, "pago", "cartao", 4);
+INSERT INTO vendas VALUES (participanteId, 10298, "MAURICE P. KELLY", '2024-01-31', "Maruba", "Plus", "day 2", 12, 1, 80, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 10299, "TIMOTHY COLIN KELLY", '2024-01-27', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 3);
+INSERT INTO vendas VALUES (participanteId, 10301, "WILLIAM HILL KELLY JR.", '2024-02-06', "Maruba", "Plus", "day 2", 12, 4, 80, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 10304, "ROBERT CLINTON KENNEDY", '2024-02-05', "Maruba", "Plus", "day 2", 12, 4, 80, 0.1, "pago", "pix", 0);
+INSERT INTO vendas VALUES (participanteId, 10303, "DOUGLAS D. KETCHAM", '2024-01-18', "Maruba", "Standard", "day 1", 11, NULL, 160, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 10303, "BORIS KHALIF", '2024-01-18', "Maruba", "VIP", "day 2", 12, NULL, 120, 0.1, "pago", "cartao", 6);
+INSERT INTO vendas VALUES (participanteId, 10305, "WILLIAM FLETCHER", '2024-01-25', "Maruba", "Plus", "day 3", 13, NULL, 90, 0.1, "pago", "pix", 0);
+
+
 
 
 insert into cupons values
-(id, 'grandpaskite', 'fixo', 'tudo', NULL, 50),
-(id, 'blackmamba', 'fixo', 'alguns', '11,12', 50),
-(id, 'paumeirense', 'percentual', 'tudo', NULL, 0.1),
-(id, 'spearofdestiny', 'percentual', 'alguns', '13', 0.1);
+(id, 'ALL50BUCKS', 'fixo', 'tudo', NULL, 50),
+(id, 'SOME50BUCKS', 'fixo', 'alguns', '11,12', 50),
+(id, 'ALL10OFF', 'percentual', 'tudo', NULL, 0.1),
+(id, 'SOME10OFF', 'percentual', 'alguns', '13', 0.1);
 
 set foreign_key_checks = 1;
 
@@ -851,3 +853,6 @@ from exemplo_fin.cashflow_vw as cf
 group by concat(cf.ingresso, ' - ', cf.lote), cf.loteValor
 )
 ;
+
+
+-- select * from vendas;
